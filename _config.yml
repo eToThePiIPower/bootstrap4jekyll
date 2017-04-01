@@ -1,0 +1,17 @@
+# Default extension of new posts and pages
+post_ext: md
+page_ext: html
+
+# Default layouts for posts and pages
+# Found in _layouts/
+post_layout: post
+page_layout: page
+
+# Default templates on `octopress new`
+# Found in _templates/
+post_template: post
+page_template: page
+draft_template: draft
+
+# Don't generate project files in the output site
+exclude: ["Gemfile", "LICENSE", "README"]
