@@ -1,3 +1,8 @@
+########## Site Options ##########
+title: My Jekyll Blog
+title-brand: MyJekyll
+subtitle: Just a blog
+
 # Default extension of new posts and pages
 post_ext: md
 page_ext: html
