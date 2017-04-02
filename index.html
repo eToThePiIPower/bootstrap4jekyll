@@ -1,46 +1,19 @@
 ---
 layout: index
 ---
-<header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white">
-  <div class="container">
-    <h1 class="display-1">
-      {{ site.title }}
-    </h1>
-    <hr class="my-5">
-    <h2 class="display-5 font-italic">
-      {{ site.subtitle }}
-    </h2>
-  </div>
-</header>
-
-<section class="container">
-  <div class="row">
-
-    <aside class="col-md-3 col-lg-2 text-right">
-      <h3 class="h5">{{ site.owner.name }}</h3>
-      <p>{{ site.owner.bio }}</p>
-      <hr class="my-4 hidden-md-up"/>
-    </aside>
-
-    <div class="col-md-9">
-      <h3 class="h3 text-muted mb-4">Latest Posts</h3>
-      {% for post in site.posts %}
-      <article class="card mb-4 post-excerpt">
-        <header class="card-block py-0">
-          <h4 class="card-title">
-            <a class="card-title-link" href="{{ post.url }}">{{ post.title }}</a>
-          </h4>
-        </header>
-        <section class="card-block">
-          {{ post.excerpt }}
-        </section>
-        <footer class="card-footer small text-muted text-right">
-          Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
-          by {{ site.owner.name }}
-        </footer>
-      </article>
-      {% endfor %}
-    </div> <!-- /.col-md-9 -->
-
-  </div> <!-- /.row -->
-</section>
+{% for post in site.posts %}
+<article class="card mb-4 post-excerpt">
+  <header class="card-block py-0">
+    <h4 class="card-title">
+      <a class="card-title-link" href="{{ post.url }}">{{ post.title }}</a>
+    </h4>
+  </header>
+  <section class="card-block">
+    {{ post.excerpt }}
+  </section>
+  <footer class="card-footer small text-muted text-right">
+    Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
+    by {{ site.owner.name }}
+  </footer>
+</article>
+{% endfor %}
