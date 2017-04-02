@@ -45,11 +45,6 @@
   margin-left: -1.25rem;
 }
 
-.site-footer a {
-  color: white;
-  text-decoration: underline;
-}
-
 .highlight {
   background-color: #f7f7f7;
   border: 1px solid #dfdfdf;
@@ -62,4 +57,27 @@
 }
 .lineno {
   margin-right: 1rem;
+}
+
+a {
+  color: #292b2c;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.card-title-link {
+  text-decoration: none;
+}
+
+.site-footer a {
+  color: white;
 }

@@ -13,7 +13,7 @@ layout: index
   </section>
   <footer class="card-footer small text-muted text-right">
     Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
-    by {{ site.owner.name }}
+    by <a href="/about">{{ site.owner.name }}</a>
   </footer>
 </article>
 {% endfor %}
