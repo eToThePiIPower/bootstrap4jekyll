@@ -8,4 +8,30 @@ Welcome to Jekyll Bootstrap, a new from-scratch iteration at a Jekyll theme,
 written using Bootstrap v4. This *first paragraph* will appear in the index
 summary, complete with **styling**.
 
-Jekyll posts are written in Markdown.
+This post can be font in the `_posts` directory, following the convention of
+`YYYY-MM-DD-name-of-post.md`.
+
+# How to Use Jekyll
+
+Jekyll offers all the power of Markdown, along with extended support for code
+snippets and other useful tech blogging tools. Code can be included in the
+standard Markdown form:
+
+```ruby
+class Dog
+  def bark
+    puts 'woof'
+  end
+end
+#=> prints 'woof'
+```
+
+Or using Jekyll's Liquid syntax:
+
+{% highlight ruby linenos %}
+class Dog
+  def bark
+    puts 'woof'
+  end
+end
+{% endhighlight %}
