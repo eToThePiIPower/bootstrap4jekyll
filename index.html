@@ -15,20 +15,23 @@ layout: index
 
 <section class="container">
   <div class="row">
-    <aside class="col-md-3 col-lg-2">
+
+    <aside class="col-md-3 col-lg-2 text-right">
       <h3 class="h5">{{ site.owner.name }}</h3>
       <p>{{ site.owner.bio }}</p>
       <hr class="my-4 hidden-md-up"/>
     </aside>
+
     <div class="col-md-9">
-      <h3 class="h1">Latest Articles</h3>
-      
+      <h3 class="h3 text-muted mb-4">Latest Posts</h3>
       {% for post in site.posts %}
-      <article class="card my-4 post-excerpt">
-        <section class="card-block">
+      <article class="card mb-4 post-excerpt">
+        <header class="card-block py-0">
           <h4 class="card-title">
             <a class="card-title-link" href="{{ post.url }}">{{ post.title }}</a>
           </h4>
+        </header>
+        <section class="card-block">
           {{ post.excerpt }}
         </section>
         <footer class="card-footer small text-muted text-right">
@@ -37,7 +40,7 @@ layout: index
         </footer>
       </article>
       {% endfor %}
-
     </div> <!-- /.col-md-9 -->
+
   </div> <!-- /.row -->
 </section>
