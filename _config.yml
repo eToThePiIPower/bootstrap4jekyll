@@ -1,13 +1,13 @@
 ########## Site Options ##########
-title: My Jekyll Blog
-title-brand: MyJekyll
-subtitle: Just a blog
+title: Euler Pi
+title-brand: EulerPi
+subtitle: A Blog of Tech, Math, and Geek Stuff
 
 owner:
-  name: Edward Hyde
+  name: Charles Beynon
   bio:
-    This is my blog. There are many like it but this
-    one is mine.
+    Full Stack Developer mostly working in Rails. Recovering sysadmin. I
+    like to dabble and tend to ramble. Don't say I didn't warn you ;D
 
 # Default extension of new posts and pages
 post_ext: md
