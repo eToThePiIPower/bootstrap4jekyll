@@ -7,10 +7,16 @@
   </button>
   <a class="navbar-brand" href="/">{{ site.title-brand }}</a>
 
+  <script>
+    $(document).ready(function() {
+      $('#siteMenu #nav-item-{{ page.menu-item }}').addClass('active');
+    });
+  </script>
+
   <div id="siteMenu" class="collapse navbar-collapse">
     <ul class="navbar-nav ml-auto">
       <li id="nav-item-about" class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="/about">About</a>
       </li>
       <li id="nav-item-contact" class="nav-item">
         <a class="nav-link" href="#">Contact</a>
