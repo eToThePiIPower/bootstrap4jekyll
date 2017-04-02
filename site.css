@@ -32,6 +32,15 @@
   color: inherit;
 }
 
+.post-excerpt {
+  border: 0;
+}
 .post-excerpt .card-block p:last-child {
   margin-bottom: 0;
+}
+.post-excerpt .card-footer {
+  border: 0;
+}
+.post-excerpt .card-title {
+  margin-left: -1.25rem;
 }

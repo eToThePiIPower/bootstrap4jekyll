@@ -1,34 +1,37 @@
 ---
 layout: index
 ---
-<header class="jumbotron jumbotron-top bg-inverse text-white">
-  <h1 class="display-1">
-    {{ site.title }}
-  </h1>
-  <hr class="my-5">
-  <h2 class="display-5">
-    {{ site.subtitle }}
-  </h2>
+<header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white">
+  <div class="container">
+    <h1 class="display-1">
+      {{ site.title }}
+    </h1>
+    <hr class="my-5">
+    <h2 class="display-5 font-italic">
+      {{ site.subtitle }}
+    </h2>
+  </div>
 </header>
 
 <section class="container">
   <div class="row">
-    <aside class="col-md-2">
+    <aside class="col-md-3 col-lg-2">
       <h3 class="h5">{{ site.owner.name }}</h3>
       <p>{{ site.owner.bio }}</p>
+      <hr class="my-4 hidden-md-up"/>
     </aside>
     <div class="col-md-9">
-      <h3 class="h1 mb-3">Latest Articles</h3>
+      <h3 class="h1">Latest Articles</h3>
       
       {% for post in site.posts %}
-      <article class="card mb-3 post-excerpt">
+      <article class="card my-4 post-excerpt">
         <section class="card-block">
           <h4 class="card-title">
             <a class="card-title-link" href="{{ post.url }}">{{ post.title }}</a>
           </h4>
           {{ post.excerpt }}
         </section>
-        <footer class="card-footer small text-muted">
+        <footer class="card-footer small text-muted text-right">
           Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
           by {{ site.owner.name }}
         </footer>
