@@ -3,6 +3,12 @@ title: My Jekyll Blog
 title-brand: MyJekyll
 subtitle: Just a blog
 
+owner:
+  name: Edward Hyde
+  bio:
+    This is my blog. There are many like it but this
+    one is mine.
+
 # Default extension of new posts and pages
 post_ext: md
 page_ext: html
