@@ -82,7 +82,7 @@ a {
   color: white;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navbar-inverse {
     background-color: transparent!important;
   }
