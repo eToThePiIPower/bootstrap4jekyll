@@ -82,6 +82,11 @@ a {
   color: white;
 }
 
+.post-content p:first-child {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 @media (min-width: 992px) {
   .navbar-inverse {
     background-color: transparent!important;
