@@ -3,30 +3,36 @@ layout: default
 ---
 <article class="post-content">
 
-  <header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white">
+  {% if page.header %}
+  <header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white"
+          style="background-image: url('/images/headers/{{ page.header.image }}')">
+  {% else %}
+  <header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white"
+          style="background-image: url('/images/headers/{{ site.header.image }}')">
+  {% endif %}
     <div class="container">
-      <h1 class="display-3 offset-md-1">
+      <h1 class="display-3 offset-lg-1">
         {{ page.title }}
       </h1>
       {% if page.subtitle %}
-      <p class="display-6 font-italic offset-md-1">
+      <p class="display-6 font-italic offset-lg-1">
         {{ page.subtitle }} 
       </p>
       {% endif %}
       <hr class="my-5 offset-md-1">
-      <h2 class="h4 text-muted offset-md-1">
+      <h2 class="h4 text-muted offset-lg-1">
         Posted on {{ page.date | date: '%A, %B %-d, %Y' }}
         by {{ site.owner.name }}
       </h2>
     </div>
   </header>
 
-  <section class="container">
+  <div class="container">
     <div class="row">
-      <div class="col-md-9 offset-md-2">
+      <section class="col-lg-9 offset-lg-2">
         {{ content }}
-      </div>
+      </section>
     </div>
-  </section>
+  </div>
 
 </article>

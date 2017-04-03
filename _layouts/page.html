@@ -11,24 +11,24 @@ layout: default
           style="background-image: url('/images/headers/{{ site.header.image }}')">
   {% endif %}
     <div class="container">
-      <h1 class="display-2 offset-md-1">
+      <h1 class="display-2 offset-lg-1">
         {{ page.title }}
       </h1>
       {% if page.subtitle %}
-      <hr class="my-5 offset-md-1"/>
-      <p class="display-5 font-italic offset-md-1">
+      <hr class="my-5 offset-lg-1"/>
+      <p class="display-5 font-italic offset-lg-1">
         {{ page.subtitle }} 
       </p>
       {% endif %}
     </div>
   </header>
 
-  <section class="container">
+  <div class="container">
     <div class="row">
-      <div class="col-md-9 offset-md-2">
+      <section class="col-lg-9 offset-lg-2">
         {{ content }}
-      </div>
+      </section>
     </div>
-  </section>
+  </div>
 
 </article>

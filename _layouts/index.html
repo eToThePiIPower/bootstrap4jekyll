@@ -16,18 +16,18 @@ layout: default
     </div>
   </header>
 
-  <section class="container index-content">
+  <div class="container index-content">
     <div class="row">
       <aside class="col-md-3 col-lg-2 text-right">
         <h3 class="h5">{{ site.owner.name }}</h3>
         <p class="small">{{ site.owner.bio }}</p>
         <hr class="my-4 hidden-md-up"/>
       </aside>
-      <div class="col-md-9">
+      <section class="col-md-9">
         <h3 class="h3 text-muted mb-4">Latest Posts</h3>
         {{ content }}
-      </div> <!-- /.col-md-9 -->
+      </section> <!-- /.col-md-9 -->
     </div> <!-- /.row -->
-  </section>
+  </div>
 
 </article>
