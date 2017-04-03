@@ -1,4 +1,33 @@
 ---
 layout: default
 ---
-{{ content }}
+<article class="index-content">
+
+  <header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white"
+          style="background-image: url('/images/headers/{{ site.header.image }}')">
+    <div class="container">
+      <h1 class="display-1">
+        {{ site.title }}
+      </h1>
+      <hr class="my-5">
+      <h2 class="display-5 font-italic">
+        {{ site.subtitle }}
+      </h2>
+    </div>
+  </header>
+
+  <section class="container index-content">
+    <div class="row">
+      <aside class="col-md-3 col-lg-2 text-right">
+        <h3 class="h5">{{ site.owner.name }}</h3>
+        <p class="small">{{ site.owner.bio }}</p>
+        <hr class="my-4 hidden-md-up"/>
+      </aside>
+      <div class="col-md-9">
+        <h3 class="h3 text-muted mb-4">Latest Posts</h3>
+        {{ content }}
+      </div> <!-- /.col-md-9 -->
+    </div> <!-- /.row -->
+  </section>
+
+</article>
