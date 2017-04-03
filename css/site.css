@@ -82,6 +82,19 @@ a {
   color: white;
 }
 
+.text-white .text-muted {
+  color: #b1b5b8!important;
+}
+
+.text-white .text-muted a {
+  color: #b1b5b8;
+}
+
+.post-content p:first-child {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 @media (min-width: 768px) {
   .navbar-inverse {
     background-color: transparent!important;
