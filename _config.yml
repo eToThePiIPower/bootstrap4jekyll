@@ -9,6 +9,10 @@ owner:
     This is my blog. There are many like it but this
     one is mine.
 
+# A default header image
+header:
+  image: main.jpg
+
 # Default extension of new posts and pages
 post_ext: md
 page_ext: html
