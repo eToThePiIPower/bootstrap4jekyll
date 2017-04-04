@@ -1,0 +1,19 @@
+.sidebar {
+  background-color: $gray-lightest;
+  border: 1px solid $gray-lighter;
+  border-radius: $border-radius;
+  padding: $spacer-y $spacer-x;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+
+    &.right {
+      float: right;
+      margin-left: $spacer-x;
+    }
+    &.left {
+      float: left;
+      margin-right: $spacer-x;
+    }
+  }
+}

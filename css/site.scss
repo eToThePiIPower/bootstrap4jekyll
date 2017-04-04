@@ -6,12 +6,12 @@
 @import 'variables';
 @import 'bootstrap';
 
+@import 'codeblock';
 @import 'displays';
 @import 'header';
-@import 'navbar';
-
-@import 'codeblock';
 @import 'index';
+@import 'navbar';
+@import 'sidebar';
 
 a {
   color: $gray-dark;
