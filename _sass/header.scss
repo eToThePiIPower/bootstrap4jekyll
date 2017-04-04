@@ -1,0 +1,24 @@
+.jumbotron-top {
+  border-radius: 0;
+
+  &.text-white {
+    hr {
+      border-top-color: $white;
+      border-top-color: rgba($white, .1);
+    }
+
+    .text-muted {
+        color: mix($text-muted, $white)!important;
+
+      a {
+        color: mix($text-muted, $white);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    background-size: cover;
+    margin-top: -3.5 * $font-size-base;
+    padding-top: 2 * $jumbotron-padding + 3.5 * $font-size-base;
+  }
+}

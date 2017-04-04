@@ -1,0 +1,21 @@
+// Additional display sizes for subtitles
+// in headers while keeping display font/weight
+.display-5,
+.display-6,
+.display-7,
+.display-8 {
+  font-weight: $display-weight;
+  line-height: $display-line-height;
+}
+.display-5 {
+  font-size: $display5-size;
+}
+.display-6 {
+  font-size: $display6-size;
+}
+.display-7 {
+  font-size: $display7-size;
+}
+.display-8 {
+  font-size: $display8-size;
+}

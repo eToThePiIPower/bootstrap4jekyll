@@ -1,0 +1,26 @@
+.post-excerpt {
+  border: 0;
+
+  .card-block p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-footer {
+    border: 0;
+  }
+
+  .card-title {
+    margin-left: -1.25rem;
+  }
+
+  .card-title-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footnotes {
+    display: none;
+  }
+}
+
+

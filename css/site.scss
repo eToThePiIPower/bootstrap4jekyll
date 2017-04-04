@@ -1,0 +1,44 @@
+---
+# Frontmatter
+---
+
+@charset 'utf-8';
+@import 'variables';
+@import 'bootstrap';
+
+@import 'codeblock';
+@import 'displays';
+@import 'header';
+@import 'index';
+@import 'navbar';
+@import 'sidebar';
+
+a {
+  color: $gray-dark;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.site-footer a {
+  color: $gray-lightest;
+}
+
+.post-content
+{
+  p:first-child {
+    font-size: $lead-font-size;
+    font-weight: $lead-font-weight;
+  }
+
+  .footnotes {
+    border-top: 1px solid $gray-light;
+    font-size: $font-size-sm;
+    margin-top: $spacer-y * 3;
+    padding-top: $spacer-y * 3;
+
+    p {
+      font-size: $font-size-sm;
+    }
+  }
+}
