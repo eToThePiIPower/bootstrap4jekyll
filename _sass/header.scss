@@ -6,14 +6,6 @@
       border-top-color: $white;
       border-top-color: rgba($white, .1);
     }
-
-    .text-muted {
-        color: mix($text-muted, $white)!important;
-
-      a {
-        color: mix($text-muted, $white);
-      }
-    }
   }
 
   @include media-breakpoint-up(md) {
