@@ -1,16 +1,17 @@
 .post-excerpt {
   border: 0;
+  box-shadow: 0 .125rem .25rem rgba($black, .175);
+
+  &:hover {
+    box-shadow: 0 .5rem 1rem rgba($black, .175);
+  }
+  .card-img-top {
+    background-size: cover;
+    height: 15rem;
+  }
 
   .card-block p:last-child {
     margin-bottom: 0;
-  }
-
-  .card-footer {
-    border: 0;
-  }
-
-  .card-title {
-    margin-left: -1.25rem;
   }
 
   .card-title-link {
