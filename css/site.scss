@@ -24,8 +24,21 @@ a {
   color: $gray-lightest;
 }
 
-.post-content p:first-child {
-  font-size: $lead-font-size;
-  font-weight: $lead-font-weight;
-}
+.post-content
+{
+  p:first-child {
+    font-size: $lead-font-size;
+    font-weight: $lead-font-weight;
+  }
 
+  .footnotes {
+    border-top: 1px solid $gray-light;
+    font-size: $font-size-sm;
+    margin-top: $spacer-y * 3;
+    padding-top: $spacer-y * 3;
+
+    p {
+      font-size: $font-size-sm;
+    }
+  }
+}
