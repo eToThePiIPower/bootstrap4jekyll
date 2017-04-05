@@ -1,0 +1,25 @@
+# Data specifically for the resume page header & contact section
+name: Jane Doe
+title: Jekyll Developer
+copy: >
+  Write the lead paragraph of your body copy here.
+  You can split it on mutiple lines.
+
+more-heading: Optional heading for second paragraph
+more: >
+  You can write a second paragraph here. It will span the full width of the page,
+  unlike the first paragraph that shares it's widith with the contact information
+  block.
+
+twitter: JaneDoe
+github: JaneDoe
+linkedin: jdoe
+homepage: https://example.com
+email: jdoe@example.com
+phone: 1-555-123-4567
+degrees:
+  - title: B.S.
+    field: Computer Science
+    institution: Fake School
+    duration: Stardate 12345.6
+    notes: "Thesis: Nonlinear Transwarp Dynamics"

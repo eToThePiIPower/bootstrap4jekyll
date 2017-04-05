@@ -4,7 +4,7 @@ title-brand: MyJekyll
 subtitle: Just a blog
 
 owner:
-  name: Edward Hyde
+  name: Jane Doe
   bio:
     This is my blog. There are many like it but this
     one is mine.
@@ -37,3 +37,7 @@ gems:
 
 sass:
   sass_dir: _sass
+
+collections:
+  - resume-cards
+  - resume-jobs

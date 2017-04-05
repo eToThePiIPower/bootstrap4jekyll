@@ -1,0 +1,60 @@
+.resume-contact {
+  ul {
+    font-size: 89.4%; // sqrt(80%)
+    list-style: none;
+
+    @include media-breakpoint-down(sm) {
+      column-count: 2;
+      padding: 0;
+    }
+  }
+
+  .fa-envelope {
+    color: #ea4335;
+  }
+
+  .fa-github {
+    color: #6cc644;
+  }
+  
+  .fa-linkedin {
+    color: #0077b5;
+  }
+
+  .fa-phone-square {
+    color: #61ed6a;
+  }
+
+  .fa-twitter {
+    color: #1da1f2;
+  }
+}
+
+.resume-cards,
+.resume-jobs,
+.resume-education {
+  font-size: $font-size-sm;
+  line-height: 1.25;
+
+  p,
+  ul,
+  ol {
+    margin-bottom: .8rem;
+  }
+  
+  .card-header {
+    font-size: $font-size-h6;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: $font-size-h6;
+  }
+
+  h5 {
+    font-size: $font-size-sm;
+  }
+}
