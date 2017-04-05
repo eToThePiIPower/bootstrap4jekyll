@@ -1,3 +1,13 @@
+.resume-content {
+  .jumbotron-top {
+    .btn {
+      display: table;
+      margin: 0 auto;
+      text-decoration: none;
+    }
+  }
+}
+
 .resume-contact {
   ul {
     font-size: 89.4%; // sqrt(80%)
