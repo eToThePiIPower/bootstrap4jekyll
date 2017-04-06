@@ -96,3 +96,15 @@
   .job-extras .job-extras-duration,
   .degree-extras .degree-duration { float: right; }
 }
+
+.resume-jobs {
+  .col-md-6 {
+    @media screen and (max-width: 767px) {
+      padding-bottom: $spacer-y;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
