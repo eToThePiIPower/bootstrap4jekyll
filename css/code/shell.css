@@ -1,0 +1,9 @@
+.language-shell_session  { color: #AAAAAA; } /* Text == Output */
+.language-shell_session .err { color: #AAAAAA } /* Error == Output */
+.language-shell_session .c { color: #177500 } /* Comment */
+
+.language-shell_session .nc { color: #3F6E75 } /* Name.Class == Command */
+.language-shell_session .kv { color: #A90D91 } /* Keyword == Argument */
+
+.language-shell_session .ni { color: #C41A16 } /* *Name.Entity == Root Prompt */
+.language-shell_session .w { color: #000000 } /* Text.Whitespace == User Prompt */
