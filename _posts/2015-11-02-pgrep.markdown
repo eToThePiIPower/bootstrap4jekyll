@@ -1,0 +1,53 @@
+---
+layout: post
+title: "pgrep and pkill: A Better killall?"
+date: 2015-11-02T19:19:20-05:00
+category: ops
+tags:
+  - linux
+  - osx
+  - zsh
+comments:
+share:
+---
+Just learned a new tool that has somehow escaped me the last 15 years. prep is a
+simple tool that lets you grep through the names of running processes, returning
+just the PIDs. pkill takes that a step further, killing the matched
+processes[^1]. The cool thing is that both support tab-completion under zsh.
+
+<!-- more -->
+
+# Quick Examples
+
+To find all running processes with the name `jekyll`
+
+{% highlight shell_session %}
+$ pgrep jekyll
+70376
+{% endhighlight %}
+
+Using the `-l` switch shows the process name as well
+
+{% highlight shell_session %}
+$ pgrep Finder
+463
+488
+$ pgrep -l Finder
+463 Finder
+488 FinderSynExt
+{% endhighlight %}
+
+Note how without the `-l` switch we don't know that we're matching
+`FinderSyncExt`. Good thing we didn't run `pkill` yet!
+
+To match exactly, the `-x` switch is used. This can help solve the problem of
+matching too greedily, especially when using `pkill`.
+{% highlight shell_session %}
+$ pgrep -x Finder
+463
+{% endhighlight %}
+
+Perhaps the too-greedy-by-default is why must instructions found on the web
+use killall over pkill. Still, I *am* liking the tab-completion offered by zsh.
+
+[^1]: A note of ***warning***: pkill will kill processes that match only partially. So `pkill Finder` will kill `Finder` and `FinderSynExt` processes. Be careful!
