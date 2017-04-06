@@ -12,8 +12,13 @@
   .resume-title {
     font-weight: 300;
   }
+
   h3 {
     font-size: $font-size-h6;
+  }
+
+  p {
+    margin-bottom: .5rem;
   }
 }
 
@@ -59,6 +64,11 @@
 .resume-education {
   font-size: $font-size-sm;
   line-height: 1.25;
+
+  .card {
+    margin-bottom: .5rem!important;
+    margin-top: .5rem!important;
+  }
 
   p,
   ul,
