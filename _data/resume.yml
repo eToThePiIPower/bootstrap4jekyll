@@ -1,25 +1,32 @@
 # Data specifically for the resume page header & contact section
-name: Jane Doe
-title: Jekyll Developer
+name: "Charles A. Beynon"
+title: "Full Stack Web Developer"
 copy: >
-  Write the lead paragraph of your body copy here.
-  You can split it on mutiple lines.
+  Full stack developer with a passion for crafting clean, well-engineered, and
+  test-driven applications. Background in math and physics, with ten years as a
+  technology specialist in Kâ€“8 where, I ran all technical needs from coding to
+  systems administration.
 
-more-heading: Optional heading for second paragraph
+#more-heading: Objective
 more: >
-  You can write a second paragraph here. It will span the full width of the page,
-  unlike the first paragraph that shares it's widith with the contact information
-  block.
+  Looking for teams open to entry- and junior level engineers to work and grow
+  with. As a lifelong learner and former educator, I have a passion for learning
+  and teaching that I will bring to your team. As I gain more experience I look
+  forward to possibilites to mentor junior developers and share my knowledge with
+  colleagues, and the larger tech community. I work best in a team-oriented,
+  friendly, and open environment (and I love pair programming :D).
 
-twitter: JaneDoe
-github: JaneDoe
-linkedin: jdoe
-homepage: https://example.com
-email: jdoe@example.com
-phone: 1-555-123-4567
+twitter: eToThePiIPower           # https://twitter.com/<JaneDoe>
+github: eToThePiIPower            # https://github.com/<jane_doe>
+linkedin: cbeynon                 # https://www.linkedin.com/in/<janedoe>
+homepage: https://eulerpi.io      # homepage link for your resume
+email: charles.a.beynon@gmail.com  # email for your resume
+phone: 1-347-433-5690
 degrees:
   - title: B.S.
-    field: Computer Science
-    institution: Fake School
-    duration: Stardate 12345.6
-    notes: "Thesis: Nonlinear Transwarp Dynamics"
+    field: Mathematics / Physics
+    institution: SUNY Binghamton
+    duration: September 2007–May 2010
+#    notes:
+#  - field: Computer Science
+#    institution: Shelbyville University
