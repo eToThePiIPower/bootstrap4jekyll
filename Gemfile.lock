@@ -79,8 +79,11 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
-  jekyll-assets
+  jekyll-assets (~> 2.2.8)
   octopress (~> 3.0)
+
+RUBY VERSION
+   ruby 2.4.1p111
 
 BUNDLED WITH
    1.14.6
