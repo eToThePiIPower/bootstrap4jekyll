@@ -1,0 +1,104 @@
+---
+layout: resume
+title: Résumé
+link: /resume.pdf
+permalink: /resume/
+menu-item: resume
+slug: resume
+---
+<div class="row resume-main">
+  <div class="col-md-4 push-md-8 resume-contact text-small">
+    {% include resume_navs.html %}
+  </div>
+  <div class="col-md-8 pull-md-4 resume-baseinfo">
+    <h1 class="resume-name h3">{{ site.data.resume.name }}</h1>
+    <h2 class="resume-title h4">{{ site.data.resume.title }}</h2>
+    <p>{{ site.data.resume.copy }}</p>
+  </div>
+  <div class="col-md-12 resume-copy">
+    {% if site.data.resume.more-heading %}
+    <h3 class="h5">{{ site.data.resume.more-heading }}</h2>
+    {% endif %}
+    {% if site.data.resume.more %}
+    <p class="resume-more-copy">{{ site.data.resume.more }}</p>
+    {% endif %}
+    {% if site.data.resume.more2-head %}
+    <h3 class="h5">{{ site.data.resume.more2-heading }}</h2>
+    {% endif %}
+    {% if site.data.resume.more2 %}
+    <p class="resume-more-copy">{{ site.data.resume.more2 }}</p>
+    {% endif %}
+  </div>
+</div>
+<!-- /.row -->
+
+<section class="row resume-cards">
+  {% for card in site.resume-cards reversed %}
+    {% if card.width %}
+    <div class="col-md-{{ card.width }}">
+    {% else %}
+    <div class="col-md-4">
+    {% endif %}
+      <div class="card my-3">
+        <h3 class="card-header">{{ card.type }}</h3>
+        <div class="card-block">
+          {{ card.content }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+<!-- /.row -->
+
+<section class="row resume-jobs">
+  <div class="col-md-12">
+    <div class="card my-3">
+      <h3 class="card-header">Experience</h3>
+      <div class="card-block">
+        <div class="row">
+          {% for job in site.resume-jobs %}
+            {% if job.width %}
+            <div class="col-md-{{ job.width }}">
+            {% else %}
+            <div class="col-md-4">
+            {% endif %}
+              <h4 class="job-title">{{ job.title }}</h4>
+              <p class="job-company">{{ job.company }}</p>
+              <p class="job-extras">
+                <span class="job-extras-location">{{ job.location }}</span>
+                <span class="job-extras-duration">{{ job.duration }}</span>
+              </p>
+              {{ job.content }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.row -->
+
+<div class="row resume-education">
+  <div class="col-md-12">
+    <div class="card my-3">
+      <h3 class="card-header">Education</h3>
+      <div class="card-block">
+        {% for degree in site.data.resume.degrees %}
+          <div class="degree">
+            <div class="degree-data">
+              <h4 class="degree-title-field">
+                <span class="degree-title">{{ degree.title }}</span>
+                <span class="degree-field">{{ degree.field }}</span>
+              </h4>
+              <div class="degree-extras">
+                <span class="degree-institution">{{ degree.institution }}</span>
+                <span class="degree-duration">{{ degree.duration }}</span>
+              </div>
+            </div>
+            <span class="degree-notes">{{ degree.notes }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

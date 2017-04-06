@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="resume-content">
+
+  {% if page.header %}
+  <header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white"
+          style="background-image: url('/images/headers/{{ page.header.image }}')">
+  {% else %}
+  <header class="jumbotron jumbotron-fluid jumbotron-top bg-inverse text-white"
+          style="background-image: url('/images/headers/{{ site.header.image }}')">
+  {% endif %}
+    <div class="container">
+      <h1 class="display-2 offset-lg-1">
+        {{ page.title }}
+      </h1>
+      {% if page.link %}
+      <hr class="my-5 offset-lg-1"/>
+      <a class="btn btn-outline-secondary text-center" href="{{ page.link }}">
+        <i class="fa fa-file-pdf-o"></i>
+        Download a PDF
+      </a>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      {{ content }}
+    </section>
+  </div>
+
+</article>

@@ -11,6 +11,8 @@
 @import 'header';
 @import 'index';
 @import 'navbar';
+@import 'resume';
+@import 'resume-print';
 @import 'sidebar';
 
 a {
@@ -41,4 +43,15 @@ a {
       font-size: $font-size-sm;
     }
   }
+}
+
+.text-white {
+  .text-muted {
+    color: mix($text-muted, $white)!important;
+
+    a {
+      color: mix($text-muted, $white);
+    }
+  }
+
 }

@@ -37,3 +37,7 @@ gems:
 
 sass:
   sass_dir: _sass
+
+collections:
+  - resume-cards
+  - resume-jobs
