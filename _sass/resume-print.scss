@@ -33,18 +33,28 @@
       }
     }
 
-    .resume-contact ul {
-      column-count: 1;
-      text-align: left;
-
-      i {
-        color: $gray;
-      }
-      a {
-        text-decoration: none;
+    .resume-education {
+      .card {
+        margin-bottom: 0!important;
       }
     }
+    .resume-contact {
+      align-self: flex-end;
 
+      ul {
+        column-count: 1;
+        text-align: left;
+
+        i {
+          color: $gray;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+
+    }
+    
     .pull-md-4 {
       right: 33.33333%;
     }
