@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% if page.layout == 'index' %}
   <title>{{ site.title }}</title>
+  {% elsif page.layout == 'resume' %}
+  <title>{{ site.data.resume.name }}</title>
   {% else %}
     <title>{{ site.title }} | {{ page.title }}</title>
   {% endif %}
