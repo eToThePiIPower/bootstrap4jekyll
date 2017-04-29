@@ -32,6 +32,10 @@
       font-size: 80%;
     }
 
+    @include media-breakpoint-up(lg) {
+      font-size: 80%;
+    }
+
     @include media-breakpoint-only(sm) {
       column-count: 2;
       padding: 0;
@@ -81,7 +85,7 @@
   }
   
   .card-header {
-    font-size: $font-size-h6;
+    font-size: 1.12rem; /* sqrt($font-size-h5), eg half-step between h5 & h6 */
   }
 
   *:last-child {
