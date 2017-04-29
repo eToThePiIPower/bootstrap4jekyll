@@ -5,22 +5,24 @@ type: "Skills"
 #### Languages
 
 *   Ruby / Ruby on Rails
-*   HTML / CSS / SCSS & LESS
-*   JavaScript / jQuery
+*   HTML / CSS / SCSS
+*   AngularJS / jQuery
 
 ##### Exposed to / Interested in
 
+*   Go
+*   Vue.JS
 *   Scala
-*   Octave / MatLAB, R / RStudio
+*   Octave, R 
 
 #### Technologies
 
-*   Linux / UNIX (~15 years)
+*   Linux (Ubuntu, CentOS, Gentoo)
 *   PostgreSQL
+*   Mac OS Server (ACTC Certified)
 *   Google Apps (Domain Admin)
-*   FileMaker Pro
 
 ##### Exposed to / Interested in
 
+*   Continuous Integration
 *   Docker
-*   TravisCI

@@ -2,19 +2,26 @@
 name: "Charles A. Beynon"
 title: "Full Stack Web Developer"
 copy: >
-  Full stack developer with a passion for crafting clean, well-engineered, and
-  test-driven applications. Background in math and physics, with ten years as a
-  technology specialist in Kâ€“8 where, I ran all technical needs from coding to
-  systems administration.
+  With over five years of experience as a systems administrator, IT generalist,
+  and computer instructor in K-8 education, I'm looking to move on to a more
+  hands-on, full-stack developer role.
+
+more:
+  I've been preparing over the last three years, including completion of a
+  coding boot camp, self-study, and a number of personal projects. My primary
+  back-end language is Ruby on Rails, with testing in RSpec/Capybara, and the
+  front-end in HTML/HAML/SCSS. I am currently diving deep into AngularJS, and
+  I'm always exposing myself to new technologies to keep a fresh mind and
+  broader outlook.
 
 #more-heading: Objective
-more: >
-  Looking for teams open to entry- and junior level engineers to work and grow
-  with. As a lifelong learner and former educator, I have a passion for learning
-  and teaching that I will bring to your team. As I gain more experience I look
-  forward to possibilites to mentor junior developers and share my knowledge with
-  colleagues, and the larger tech community. I work best in a team-oriented,
-  friendly, and open environment (and I love pair programming :D).
+more2: >
+  Ideally, I'm looking for a team committed (as I am) to rigorous engineering
+  practices but that also recognizes the human aspect; that software is written
+  by, and for, people. I consider a heavy use of pair-programming, test-driven
+  development, and continuous integration; a focus on communication between team
+  members/clients; and a commitment to developer growth through mentorship and
+  professional development; to be strong indicators of a team I'll be successful at.
 
 twitter: eToThePiIPower           # https://twitter.com/<JaneDoe>
 github: eToThePiIPower            # https://github.com/<jane_doe>
