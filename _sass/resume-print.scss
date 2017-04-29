@@ -1,7 +1,13 @@
 @media print {
-  #resume {
-    font-size: 12px;
+  html {
+    font-size: 13px;
+  }
+  body {
+    color: #000;
+  }
 
+  #resume {
+    /* Fix for Chrome */
     h1,
     h2,
     h3,
@@ -30,6 +36,10 @@
 
       .card-block {
         padding: .5rem 0 0;
+
+        ul {
+          padding-left: 1rem;
+        }
       }
     }
 
@@ -39,7 +49,7 @@
       }
     }
     .resume-contact {
-      align-self: flex-end;
+      /*align-self: flex-end;*/
 
       ul {
         column-count: 1;

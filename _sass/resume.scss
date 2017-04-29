@@ -28,6 +28,10 @@
     list-style: none;
     padding-left: 0;
 
+    @include media-breakpoint-up(lg) {
+      font-size: 80%;
+    }
+
     @include media-breakpoint-only(sm) {
       column-count: 2;
       padding: 0;
@@ -86,6 +90,13 @@
 
   h4 {
     font-size: $font-size-h6;
+    display: inline-block;
+  }
+
+  .subtitle {
+    color: $gray;
+    display: inline-block;
+    font-style: italic;
   }
 
   h5 {
