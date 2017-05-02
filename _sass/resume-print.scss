@@ -5,6 +5,10 @@
   body {
     color: #000;
   }
+  @page {
+    size: letter portrait;
+    margin: .35in .35in .3in .35in;
+  }
 
   #resume {
     /* Fix for Chrome */
@@ -53,11 +57,13 @@
       column-count: 1;
       text-align: left;
 
-      i {
-        color: $gray;
-      }
-      a {
-        text-decoration: none;
+        i {
+          color: $gray;
+        }
+        a {
+          color: mix($black, $gray-dark);
+          text-decoration: none;
+        }
       }
     }
 
