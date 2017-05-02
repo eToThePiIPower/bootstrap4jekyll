@@ -9,7 +9,8 @@ width: 8
 (Upcoming)
 
 A contact management tool that keeps track of the people you meet, what you
-talked about recently, and gently reminds you to renew those connections.
+talked about recently, and gently reminds you to renew those connections and
+keep your promises.
 **Rails 5** / **Angular 2**
 
 #### Quotebook
@@ -18,7 +19,8 @@ talked about recently, and gently reminds you to renew those connections.
 (2016--2017)
 
 A tool to collect, organize, and share quotations from various sources,
-including directly entered and from Kindle Highlights. **Rails 5**
+including directly entered and from Kindle Highlights.
+**Rails 5**
 
 #### Bootstrap4Jekyll
 

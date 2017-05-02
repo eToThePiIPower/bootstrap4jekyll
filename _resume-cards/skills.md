@@ -11,7 +11,7 @@ type: "Skills"
 ##### Exposed to / Interested in
 
 *   Go
-*   Vue.JS
+*   Node, Meteor
 *   Scala
 *   Octave, R 
 
@@ -20,6 +20,7 @@ type: "Skills"
 *   Linux (Ubuntu, CentOS, Gentoo)
 *   PostgreSQL
 *   Mac OS Server (ACTC Certified)
+*   Amazon AWS / Alexa Skills
 *   Google Apps (Domain Admin)
 
 ##### Exposed to / Interested in
