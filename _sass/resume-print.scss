@@ -5,6 +5,10 @@
   body {
     color: #000;
   }
+  @page {
+    size: letter portrait;
+    margin: .35in .35in .3in .35in;
+  }
 
   #resume {
     /* Fix for Chrome */
@@ -59,6 +63,7 @@
           color: $gray;
         }
         a {
+          color: mix($black, $gray-dark);
           text-decoration: none;
         }
       }
