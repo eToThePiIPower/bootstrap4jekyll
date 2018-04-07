@@ -11,7 +11,7 @@ layout: default
           style="background-image: url('/images/headers/{{ site.header.image }}')">
   {% endif %}
     <div class="container">
-      <h1 class="display-3 offset-lg-1">
+      <h1 class="display-5 offset-lg-1">
         {{ page.title }}
       </h1>
       {% if page.subtitle %}
@@ -20,7 +20,7 @@ layout: default
       </p>
       {% endif %}
       <hr class="my-5 offset-md-1">
-      <h2 class="h4 text-muted offset-lg-1">
+      <h2 class="h6 text-muted offset-lg-1">
         Posted on {{ page.date | date: '%A, %B %-d, %Y' }}
         by <a href="/about">{{ site.owner.name }}</a>
       </h2>
