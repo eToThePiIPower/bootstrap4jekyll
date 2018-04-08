@@ -25,14 +25,17 @@
 }
 
 a {
-  color: $gray-dark;
-  font-weight: 500;
+  color: $gray-700;
+  font-weight: 400;
   text-decoration: underline;
   text-decoration-style: dotted;
+  &:hover {
+    color: $gray-800;
+  }
 }
 
 .site-footer a {
-  color: $gray-lightest;
+  color: $gray-100;
 }
 
 .post-content
@@ -43,10 +46,10 @@ a {
   }
 
   .footnotes {
-    border-top: 1px solid $gray-light;
+    border-top: 1px solid $gray-300;
     font-size: $font-size-sm;
-    margin-top: $spacer-y * 3;
-    padding-top: $spacer-y * 3;
+    margin-top: map-get($spacers, 5);
+    padding-top: $spacer * 3;
 
     p {
       font-size: $font-size-sm;

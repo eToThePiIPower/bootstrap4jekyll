@@ -41,7 +41,7 @@ slug: resume
     {% endif %}
       <div class="card my-3">
         <h3 class="card-header">{{ card.type }}</h3>
-        <div class="card-block">
+        <div class="card-body">
           {{ card.content }}
         </div>
       </div>
@@ -54,7 +54,7 @@ slug: resume
   <div class="col-md-12">
     <div class="card my-3">
       <h3 class="card-header">Experience</h3>
-      <div class="card-block">
+      <div class="card-body">
         <div class="row">
           {% for job in site.resume-jobs %}
             {% if job.width %}
@@ -82,7 +82,7 @@ slug: resume
   <div class="col-md-12">
     <div class="card my-3">
       <h3 class="card-header">Education</h3>
-      <div class="card-block">
+      <div class="card-body">
         {% for degree in site.data.resume.degrees %}
           <div class="degree">
             <div class="degree-data">

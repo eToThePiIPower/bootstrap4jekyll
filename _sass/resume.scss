@@ -14,7 +14,7 @@
   }
 
   h3 {
-    font-size: $font-size-h6;
+    font-size: $h6-font-size;
   }
 
   p {
@@ -26,6 +26,7 @@
   ul {
     font-size: 89.4%; // sqrt(80%)
     list-style: none;
+    padding-left: 0;
 
     @include media-breakpoint-up(lg) {
       font-size: 80%;
@@ -39,6 +40,10 @@
     @include media-breakpoint-only(xs) {
       text-align: center;
     }
+  }
+
+  a {
+    color: $gray-700
   }
 
   .fa-envelope {
@@ -88,12 +93,12 @@
   }
 
   h4 {
-    font-size: $font-size-h6;
+    font-size: $h6-font-size;
     display: inline-block;
   }
 
   .subtitle {
-    color: $gray;
+    color: $gray-500;
     display: inline-block;
     font-style: italic;
   }
@@ -111,7 +116,7 @@
 .resume-jobs {
   .col-md-6 {
     @media screen and (max-width: 767px) {
-      padding-bottom: $spacer-y;
+      padding-bottom: $spacer;
 
       &:last-child {
         padding-bottom: 0;
