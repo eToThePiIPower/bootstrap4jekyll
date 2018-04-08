@@ -31,7 +31,7 @@ draft_template: draft
 # Don't generate project files in the output site
 exclude: ["Gemfile", "LICENSE", "README"]
 
-gems:
+plugins:
   - bootstrap
   - jekyll-assets
 
