@@ -2,6 +2,7 @@
 title: My Jekyll Blog
 title-brand: MyJekyll
 subtitle: Just a blog
+url: https://example.com
 
 owner:
   name: Jane Doe
@@ -9,9 +10,24 @@ owner:
     This is my blog. There are many like it but this
     one is mine.
 
+# Include comments by default in posts but not pages
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      comments: true
+  - scope:
+      type: "pages"
+    values:
+      comments: false
+
 # A default header image
 header:
   image: main.jpg
+
+disqus:
+  shortname: EXAMPLE
 
 # Default extension of new posts and pages
 post_ext: md

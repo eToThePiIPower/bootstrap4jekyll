@@ -11,8 +11,10 @@ etc) are yet to be implemented.
 2.  Create a branch `yoursite`. This will make it easier to pull in updates
     later. 
 3.  Edit the example posts and configurations, including:
-    *   `_config.yml`
-    *   `about.md`
+    *   Update variables in `_config.yml`
+    *   Sign up for Disqus and replace the shortname
+        - Alternatively, delete the entry if you don't want to use comments
+    *   Write about yourself in `about.md`
 4.  Customize the resume builder, including:
     *   `_data/resume.yml` for the main block
     *   `_resume-cards/*.md` for individual cards such as skills, projects, etc
@@ -24,7 +26,6 @@ TODO: Go into more detail.
 
 The following will likely be implemented before a 1.0 release.
 
-* Comments (Using Disqus)
 * Social media integration (twitter cards, open graph, etc)
 * Categories and Tags (Including index pages)
 * Pagination on index pages

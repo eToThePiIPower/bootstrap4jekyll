@@ -32,6 +32,20 @@ layout: default
       <section class="col-lg-9 offset-lg-2">
         {{ content }}
       </section>
+
+      {% if site.disqus.shortname and page.comments %}
+      <hr class="col-lg-9 offset-lg-2 my-5 offset-md-1" />
+
+      <section class="col-lg-9 offset-lg-2">
+        <div class="card">
+          <div class="card-header">Comments</div>
+          <div class="card-body">
+            {% include comments.html %} 
+          </div>
+        </div>
+      </section>
+      {% endif %}
+
     </div>
   </div>
 
