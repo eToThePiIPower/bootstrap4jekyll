@@ -11,19 +11,19 @@ layout: default
           style="background-image: url('/images/headers/{{ site.header.image }}')">
   {% endif %}
     <div class="container">
-      <h1 class="display-5 offset-lg-1">
+      <h1 class="title-3 offset-lg-1">
         {{ page.title }}
       </h1>
+      <hr class="my-5 offset-md-1">
       {% if page.subtitle %}
-      <p class="display-7 font-italic offset-lg-1">
+      <p class="subtitle-3 offset-lg-1">
         {{ page.subtitle }} 
       </p>
       {% endif %}
-      <hr class="my-5 offset-md-1">
-      <h2 class="h6 text-muted offset-lg-1">
-        Posted on {{ page.date | date: '%A, %B %-d, %Y' }}
-        by <a href="/about">{{ site.owner.name }}</a>
-      </h2>
+      <div class="metatitle-3 text-muted text-right">
+        <span class="avoid-wrap">Posted on {{ page.date | date: '%A, %B %-d, %Y' }}</span>
+        <span class="avoid-wrap">by <a href="/about">{{ site.owner.name }}</a></span>
+      </div>
     </div>
   </header>
 

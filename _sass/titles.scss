@@ -1,0 +1,44 @@
+$title-sizes: (
+  1: $display1-size,
+  2: $display2-size,
+  3: $display3-size,
+  4: $display4-size,
+);
+
+$media-scale: 0.75;
+$subtitle-scale: 0.5;
+$metatitle-scale: 0.333;
+
+@each $level, $size in $title-sizes {
+  .title-#{$level} {
+    line-height: $display-line-height;
+    font-size: $media-scale * $size;
+    font-weight: 300;
+
+    @include media-breakpoint-up(md) {
+      font-size: $size;
+    }
+  }
+
+  .subtitle-#{$level} {
+    line-height: $display-line-height;
+    font-size: $subtitle-scale * $media-scale * $size;
+    font-style: italic;
+    font-weight: 300;
+
+    @include media-breakpoint-up(md) {
+      font-size: $subtitle-scale * $size;
+    }
+  }
+
+  .metatitle-#{$level} {
+    line-height: $display-line-height;
+    font-size: $metatitle-scale * $media-scale * $size;
+    font-weight: 300;
+
+    @include media-breakpoint-up(md) {
+      font-size: $metatitle-scale * $size;
+    }
+  }
+
+}

@@ -7,7 +7,7 @@
 @import 'bootstrap';
 
 @import 'codeblock';
-@import 'displays';
+@import 'titles';
 @import 'header';
 @import 'index';
 @import 'navbar';
@@ -66,4 +66,8 @@ a {
     }
   }
 
+}
+
+.avoid-wrap {
+  display: inline-block;
 }
