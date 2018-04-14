@@ -8,7 +8,7 @@
     }
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     background-size: cover;
     margin-top: -3.5 * $font-size-base;
     padding-top: 2 * $jumbotron-padding + 3.5 * $font-size-base;
