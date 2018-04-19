@@ -10,24 +10,13 @@ owner:
     This is my blog. There are many like it but this
     one is mine.
 
-# Include comments by default in posts but not pages
-defaults:
-  -
-    scope:
-      type: "posts"
-    values:
-      comments: true
-  - scope:
-      type: "pages"
-    values:
-      comments: false
-
 # A default header image
 header:
   image: main.jpg
 
-disqus:
-  shortname: EXAMPLE
+services:
+  google_analytics: UA-XXXXX-Y
+  disqus_shortname: EXAMPLE
 
 # Default extension of new posts and pages
 post_ext: md
@@ -57,3 +46,15 @@ sass:
 collections:
   - resume-cards
   - resume-jobs
+
+# Include comments by default in posts but not pages
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      comments: true
+  - scope:
+      type: "pages"
+    values:
+      comments: false

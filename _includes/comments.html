@@ -1,3 +1,4 @@
+{{ if site.services.disqus_shortname }}
 <div id="disqus_thread"></div>
 
 <script>
@@ -9,7 +10,7 @@
   (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
     var d = document, s = d.createElement('script');
 
-    s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
+    s.src = 'https://{{ site.services.disqus_shortname }}.disqus.com/embed.js';
 
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
@@ -22,4 +23,4 @@
     comments powered by Disqus.
   </a>
 </noscript>  
-
+{{ endif }}
