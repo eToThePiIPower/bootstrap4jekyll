@@ -25,6 +25,12 @@ layout: default
         <span class="avoid-wrap">by <a href="/about">{{ site.owner.name }}</a></span>
       </div>
     </div>
+
+    <div class="tags">
+      {% for tag in page.tags %}
+        <a class="badge badge-secondary" href="/tags/#{{ tag }}">{{ tag  }}</a>
+      {% endfor %}
+    </div>
   </header>
 
   <div class="container">

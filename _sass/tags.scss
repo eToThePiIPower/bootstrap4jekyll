@@ -1,0 +1,23 @@
+.tag-group {
+  font-size: 75%;
+
+  .list-group-item {
+    padding: $list-group-item-padding-y*0.75 $list-group-item-padding-x*0.75;
+  }
+}
+
+.tag-item-link {
+  text-decoration: none;
+}
+
+.jumbotron {
+  .tags {
+    font-size: 1.5em;
+    margin-top: $spacer * 3;
+    text-align: center;
+  }
+}
+
+a.badge {
+  text-decoration: none;
+}

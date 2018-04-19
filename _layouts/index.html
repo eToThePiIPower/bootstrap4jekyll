@@ -4,30 +4,22 @@ layout: default
 <article class="index-content">
 
   <header class="jumbotron jumbotron-fluid jumbotron-top bg-dark text-white"
+  {% if page.header %}
+          style="background-image: url('/images/headers/{{ page.header.image }}')">
+  {% else %}
           style="background-image: url('/images/headers/{{ site.header.image }}')">
+  {% endif %}
     <div class="container">
       <h1 class="title-1">
-        {{ site.title }}
+        {{ page.title }}
       </h1>
       <hr class="my-5">
       <h2 class="subtitle-1">
-        {{ site.subtitle }}
+        {{ page.subtitle }}
       </h2>
     </div>
   </header>
 
-  <div class="container index-content">
-    <div class="row">
-      <aside class="col-md-3 col-lg-2 text-right">
-        <h3 class="h5">{{ site.owner.name }}</h3>
-        <p class="small">{{ site.owner.bio }}</p>
-        <hr class="my-4 d-md-none"/>
-      </aside>
-      <section class="col-md-9">
-        <h3 class="h3 text-muted mb-4">Latest Posts</h3>
-        {{ content }}
-      </section> <!-- /.col-md-9 -->
-    </div> <!-- /.row -->
-  </div>
+  {{ content }}
 
 </article>

@@ -2,6 +2,9 @@
 layout: post
 title: "Welcome to Jekyll Bootstrap"
 subtitle: "All The Power of Jekyll and Bootstrap 4"
+tags:
+  - sample post
+  - jekyll
 date: 2017-01-01T00:00:00-00:00
 ---
 Welcome to Jekyll Bootstrap, a new from-scratch iteration at a Jekyll theme,
