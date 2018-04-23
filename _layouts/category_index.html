@@ -1,0 +1,27 @@
+---
+layout: index
+---
+
+<div class="container index-content">
+  <div class="row">
+
+    <aside class="col-md-3 col-lg-2 text-right">
+      <h3 class="h5">
+        {{ site.categories_meta[page.category].long_title }} 
+      </h3>
+      <p class="small">
+        {{ site.categories_meta[page.category].long_description | default: site.categories_meta[page.category].description  }} 
+      </p>
+      <hr class="my-4 d-md-none"/>
+    </aside>
+
+    <section class="col-md-9">
+      <h3 class="h3 text-muted mb-4">Latest Posts</h3>
+
+      {% assign ps = site.categories[page.category] %}
+      {% include index-for.html posts=ps %}
+
+    </section> <!-- /.col-md-9 -->
+
+  </div> <!-- /.row -->
+</div>

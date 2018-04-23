@@ -18,6 +18,25 @@ services:
   google_analytics: UA-XXXXX-Y
   disqus_shortname: EXAMPLE
 
+# Category pages
+category_dir: /
+categories_meta:
+  default:
+    header:
+      image: main.jpg
+  code:
+    long_title: Software Development
+    description: Thoughts on Software Development
+    long_description: These are some of my thoughts on software development.
+    header:
+      image: main.jpg
+  life:
+    long_title: Life, The Universe, and Everything
+    description: So long, and thanks for all the fish
+    # long descriptions are optional, and default the the normal one
+    # be sure to define colors in _sass/variables.scss to get the corresponding
+    # css classes
+
 # Default extension of new posts and pages
 post_ext: md
 page_ext: html

@@ -1,0 +1,39 @@
+{% for post in include.posts %}
+  {% if post.category.first %}
+  <article class="card mb-4 post-excerpt card-category-{{ post.category.first }}">
+  {% elsif post.category %}
+  <article class="card mb-4 post-excerpt card-category-{{ post.category }}">
+  {% else %}
+  <article class="card mb-4 post-excerpt">
+  {% endif %}
+
+  {% if post.category %}
+    <a class="card-header card-header-tab"
+       href="/{{ post.category }}">
+      {% if post.category.first %}
+      {{ site.categories_meta[post.category.first].long_title }}
+      {% else %}
+      {{ site.categories_meta[post.category].long_title }}
+      {% endif %}
+    </a>
+  {% endif %}
+
+  {% if post.header %}
+    <div class="card-img-top" style="background-image:url('/images/headers/{{ post.header.image }}');">
+    </div>
+  {% endif %}
+
+  <header class="card-body pb-0">
+    <h4 class="card-title">
+      <a class="card-title-link" href="{{ post.url }}">{{ post.title }}</a>
+    </h4>
+  </header>
+  <section class="card-body pt-0">
+    {{ post.excerpt }}
+  </section>
+  <footer class="card-footer small text-muted text-right">
+    Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
+    by <a href="/about">{{ site.owner.name }}</a>
+  </footer>
+</article>
+{% endfor %}

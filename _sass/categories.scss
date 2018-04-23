@@ -1,0 +1,57 @@
+.post-excerpt {
+  border: 0;
+
+  header {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 0;
+  }
+
+  section {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: 0;
+  }
+
+  footer {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: 0;
+  }
+}
+
+.card-header-tab {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 0;
+  display: inline-block;
+  font-size: 80%;
+  margin-right: 0;
+  margin-left: auto;
+  padding-bottom: $spacer/4;
+  padding-top: $spacer/4;
+  text-decoration: none;
+  width: fit-content;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.card-header-tab + .card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@mixin card-category-variant($color) {
+  .card-header {
+    background-color: $color;
+    color: color-yiq($color);
+  }
+
+  header {
+    border-top: 4px solid $color;
+  }
+}
+
+@each $category, $color in $categories {
+  .card-category-#{$category} {
+    @include card-category-variant($color);
+  }
+}

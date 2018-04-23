@@ -1,1 +1,7 @@
 $font-size-base: 1rem;
+
+$categories: (
+  // These should match the short category tags defined in _config.yml
+  "code": #701516,
+  "life": #151670,
+);

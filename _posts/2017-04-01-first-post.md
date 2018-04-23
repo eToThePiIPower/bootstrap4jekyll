@@ -2,6 +2,7 @@
 layout: post
 title: "Welcome to Jekyll Bootstrap"
 subtitle: "All The Power of Jekyll and Bootstrap 4"
+category: code
 tags:
   - sample post
   - jekyll

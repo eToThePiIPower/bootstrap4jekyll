@@ -15,26 +15,7 @@ subtitle: Just a blog
     <section class="col-md-9">
       <h3 class="h3 text-muted mb-4">Latest Posts</h3>
 
-      {% for post in site.posts %}
-        <article class="card mb-4 post-excerpt">
-          {% if post.header %}
-            <div class="card-img-top" style="background-image:url('/images/headers/{{ post.header.image }}');">
-            </div>
-          {% endif %}
-          <header class="card-body pb-0">
-            <h4 class="card-title">
-              <a class="card-title-link" href="{{ post.url }}">{{ post.title }}</a>
-            </h4>
-          </header>
-          <section class="card-body pt-0">
-            {{ post.excerpt }}
-          </section>
-          <footer class="card-footer small text-muted text-right">
-            Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
-            by <a href="/about">{{ site.owner.name }}</a>
-          </footer>
-        </article>
-      {% endfor %}
+      {% include index-for.html posts=site.posts %}
 
     </section> <!-- /.col-md-9 -->
 

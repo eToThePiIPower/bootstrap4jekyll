@@ -1,8 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">{{ site.title-brand }}</a>
-
-  <button class="navbar-toggler"
-          type="button"
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <a class="navbar-brand" href="/">{{ site.title-brand }}</a> <button class="navbar-toggler" type="button"
           data-target="#siteMenu" data-toggle="collapse"
           aria-controls="siteMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -15,6 +11,16 @@
   </script>
 
   <div id="siteMenu" class="collapse navbar-collapse">
+
+    <ul class="navbar-nav mr-auto">
+      {% for category in site.categories %}
+      {% assign cat=category | first %}
+      <li id="nav-item-{{ cat }}" class="nav-item">
+        <a class="nav-link" href="/{{ cat  }}">{{ cat | capitalize }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
     <ul class="navbar-nav ml-auto">
       <li id="nav-item-about" class="nav-item">
         <a class="nav-link" href="/about">About</a>
@@ -26,6 +32,7 @@
         <a class="nav-link" href="/tags">Tags</a>
       </li>
     </ul>
+
   </div>
 
 </nav>
