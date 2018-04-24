@@ -10,6 +10,7 @@ header:
     {% assign tags = site.tags | sort %}
 
     <aside class="col-md-3 col-lg-2 text-right">
+      <h2 class="sr-only">Tag List</h2>
       <ul class="list-group tag-group small">
         {% assign ptags = tags | popular_tags | sort_tags %}
         {% for tag in ptags %}
@@ -17,14 +18,18 @@ header:
           {% assign c = tag | last | size %}
           <a class="list-group-item list-group-item-action" href="#{{ t }}">
             <span>{{ t }}</span>
-            <span class="badge badge-secondary ml-3 pull-right">{{ c }}</span>
+            <span class="badge badge-secondary ml-3 pull-right">
+              <span class="sr-only">(</span><span>{{ c }}</span>
+              <span class="sr-only">posts)</span>
+            </span>
           </a>
         {% endfor %}
       </ul>
+      <hr class="my-4 d-md-none"/>
     </aside>
 
     <section class="col-md-9">
-      <h3 class="h3 text-muted mb-4">All Tags</h3>
+      <h2 class="h3 text-muted mb-4">Posts by Tags</h2>
 
       {% assign ptags = tags | popular_tags | sort %}
       {% for tag in ptags %}
@@ -32,10 +37,13 @@ header:
           {% assign t = tag | first %}
           {% assign c = tag | last | size %}
           {% assign posts = tag | last | sort %}
-          <h2 class="h4 card-header" id="{{ t }}">
+          <h3 class="h4 card-header" id="{{ t }}">
             <span>{{ t }}</span>
-            <span class="badge badge-secondary pull-right">{{ c }}</span>
-          </h2>
+            <span class="badge badge-secondary pull-right">
+              <span class="sr-only">(</span><span>{{ c }}</span>
+              <span class="sr-only">posts)</span>
+            </span>
+          </h3>
           <ul class="list-group tag-group list-group-flush">
             {% for post in posts %}
               <a class="list-group-item list-group-item-action" href="{{ post.url }}">
