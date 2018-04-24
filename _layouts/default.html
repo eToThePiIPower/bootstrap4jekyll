@@ -1,34 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if page.layout == 'index' %}
-  <title>{{ site.title }}</title>
-  {% elsif page.layout == 'resume' %}
-  <title>{{ site.data.resume.name }}</title>
-  {% else %}
-    <title>{{ site.title }} | {{ page.title }}</title>
-  {% endif %}
-  <link rel="stylesheet"
-        href="/css/site.css">
-  <link rel="stylesheet"
-        href="/css/code/xcode.css">
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous">
-  </script>
-</head>
-<body id="{{ page.slug }}">
-  {% include navbar.html %}
 
-  {{ content }}
+  {% include head.html %}
+
+  <body id="{{ page.slug }}">
+    {% include navbar.html %}
+
+    {{ content }}
 
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-  {% include scripts.html %}
-</body>
+    {% include scripts.html %}
+  </body>
 </html>

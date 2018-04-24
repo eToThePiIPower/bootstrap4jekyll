@@ -1,0 +1,49 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% if page.layout == 'index' %}
+  <title>{{ site.title }}</title>
+  {% elsif page.layout == 'resume' %}
+  <title>{{ site.data.resume.name }}</title>
+  {% else %}
+  <title>{{ site.title }} | {{ page.title }}</title>
+  {% endif %}
+
+  <!-- Twitter Cards -->
+  {% if page.header.image %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}/images/headers/{{ page.header.image }}">
+  {% else %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="{{ site.url }}/images/{{ page.thumb | default: site.logo }}">
+  {% endif %}
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  {% if site.owner.twitter %}
+  <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
+  {% endif %}
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ site.url }}/images/headers/{{ page.header.image | default: site.header.image }}">
+  <meta property="og:image:alt" content="{{ page.header.imagealt | default; site.header.imagealt }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Stylesheets and Scripts -->
+  <link rel="stylesheet"
+        href="/css/site.css">
+  <link rel="stylesheet"
+        href="/css/code/xcode.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+  </script>
+</head>

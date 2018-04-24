@@ -2,7 +2,11 @@
 title: My Jekyll Blog
 title-brand: MyJekyll
 subtitle: Just a blog
+description:
+  This is the personal site of Jane Doe. There are many like it but this one
+  is hers.
 url: https://example.com
+logo: logo.png
 
 owner:
   name: Jane Doe
