@@ -1,13 +1,42 @@
-<footer class="site-footer bg-dark text-white small p-5 mt-5">
+<footer class="site-footer bg-dark text-white p-5 mt-5">
   <div class="container">
-    <p>Copyright &copy; {{ site.owner.name }}.
+
+    <ul class="h2 text-center list-unstyled list-inline mb-5">
+
+      <li class="list-inline-item">
+        <a href="https://twitter.com/{{ site.owner.twitter }}/" target="_blank">
+          <i class="fa fa-twitter fa-fw"></i>
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank">
+          <i class="fa fa-linkedin fa-fw"></i>
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/{{ site.owner.facebook }}" target="_blank">
+          <i class="fa fa-facebook fa-fw"></i>
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="https://github.com/{{ site.owner.github }}/" target="_blank">
+          <i class="fa fa-github fa-fw"></i>
+        </a>
+      </li>
+
+    </ul>
+
+    <p class="small">Copyright &copy; {{ site.owner.name }}.
        Except where otherside noted the content of this site
        is licensed to the public under a
        <a href="https://creativecommons.org/licenses/by/4.0/">
          Creative Commons Attribution 4.0</a>
        license.
     </p>
-    <p>
+    <p class="small">
       Powered by Jekyll. Site last generated on {{ site.time | date: '%A, %B %-d, %Y' }}
     </p>
   </div>
