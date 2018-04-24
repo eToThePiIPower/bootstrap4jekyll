@@ -1,8 +1,10 @@
 .tag-group {
-  font-size: 75%;
-
   .list-group-item {
     padding: $list-group-item-padding-y*0.75 $list-group-item-padding-x*0.75;
+  }
+
+  .list-group-item-action {
+    text-decoration: none;
   }
 }
 

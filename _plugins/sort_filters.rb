@@ -1,6 +1,12 @@
 module Jekyll
   module SortFilters
     def popular_tags(tags)
+      tags.select do |tag|
+        tag[1].length >= 2
+      end
+    end
+
+    def sort_tags(tags)
       tags.sort do |a, b|
         b[1].length <=> a[1].length
       end
