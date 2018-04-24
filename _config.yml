@@ -26,16 +26,20 @@ categories_meta:
       image: main.jpg
   code:
     long_title: Software Development
+      # Long Title: Optional. Defaults: short title
     description: Thoughts on Software Development
+      # Description: Optional. Default: "Posts in the _ section"
     long_description: These are some of my thoughts on software development.
+      # Long Description: Optional. Default: Description
     header:
       image: main.jpg
+      # Header section. Optional. Defaults to the common default.
+    weight: -1 # Optional, defaults to 0. Negative comes later in navbar list.
+      # Weight. Optinal. Default: 0. Positive numbers come earlier in the navbar
+      # menu, negative numbers come later.
   life:
     long_title: Life, The Universe, and Everything
     description: So long, and thanks for all the fish
-    # long descriptions are optional, and default the the normal one
-    # be sure to define colors in _sass/variables.scss to get the corresponding
-    # css classes
 
 # Default extension of new posts and pages
 post_ext: md

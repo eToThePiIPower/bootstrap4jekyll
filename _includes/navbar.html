@@ -13,7 +13,8 @@
   <div id="siteMenu" class="collapse navbar-collapse">
 
     <ul class="navbar-nav mr-auto">
-      {% for category in site.categories %}
+      {% assign cats=site.categories | sort_categories %}
+      {% for category in cats %}
       {% assign cat=category | first %}
       <li id="nav-item-{{ cat }}" class="nav-item">
         <a class="nav-link" href="/{{ cat  }}">{{ cat | capitalize }}</a>
