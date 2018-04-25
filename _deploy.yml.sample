@@ -1,0 +1,10 @@
+# A partial deploy file. You'll need to generate a full one with
+# `octopres deploy init` and merge in the headers sections if you're using
+# s3 + cloudfront.
+# The content_type is particularly important SEO and twitter cards.
+
+site_dir: _site
+
+headers:
+  - filename: '^.*\.html$'
+    content_type: 'text/html'
