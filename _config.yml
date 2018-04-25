@@ -7,6 +7,7 @@ description:
   is hers.
 url: https://example.com
 logo: logo.png
+logoalt: Every image should have an alt tag, and this one is for the site logo.
 
 owner:
   name: Jane Doe
@@ -21,6 +22,7 @@ owner:
 # A default header image
 header:
   image: main.jpg
+  imagealt: Describe the site header image for screen reader users.
 
 services:
   google_analytics: UA-XXXXX-Y
@@ -32,6 +34,7 @@ categories_meta:
   default:
     header:
       image: main.jpg
+      imagealt: Describe the default category index header image for screen reader users.
   code:
     long_title: Software Development
       # Long Title: Optional. Defaults: short title
@@ -41,6 +44,7 @@ categories_meta:
       # Long Description: Optional. Default: Description
     header:
       image: main.jpg
+      imagealt: Describe the category index header image for screen reader users.
       # Header section. Optional. Defaults to the common default.
     weight: -1 # Optional, defaults to 0. Negative comes later in navbar list.
       # Weight. Optinal. Default: 0. Positive numbers come earlier in the navbar
