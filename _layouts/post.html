@@ -39,9 +39,11 @@ layout: default
         {{ content }}
       </section>
 
-      {% if site.services.disqus_shortname and page.comments %}
       <hr class="col-lg-9 offset-lg-2 my-5 offset-md-1" />
 
+      {% include social_sharing.html %}
+
+      {% if site.services.disqus_shortname and page.comments %}
       <section class="col-lg-9 offset-lg-2">
         <div class="card">
           <div class="card-header">Comments</div>
