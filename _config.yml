@@ -9,6 +9,9 @@ url: https://example.com
 logo: logo.png
 logoalt: Every image should have an alt tag, and this one is for the site logo.
 
+permalink: "/:categories/:year/:month/:title/"
+timezone: UTC
+
 owner:
   name: Jane Doe
   bio:
