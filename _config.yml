@@ -36,16 +36,12 @@ categories_meta:
       image: main.jpg
       imagealt: Describe the default category index header image for screen reader users.
   code:
-    long_title: Software Development
-      # Long Title: Optional. Defaults: short title
-    description: Thoughts on Software Development
-      # Description: Optional. Default: "Posts in the _ section"
-    long_description: These are some of my thoughts on software development.
-      # Long Description: Optional. Default: Description
-    header:
+    long_title: Software Development # Long Title: Optional. Defaults: short title
+    description: Thoughts on Software Development # Description: Optional. Default: "Posts in the _ section"
+    long_description: These are some of my thoughts on software development. # Long Description: Optional. Default: Description
+    header: # Header section. Optional. Defaults to the common default.
       image: main.jpg
       imagealt: Describe the category index header image for screen reader users.
-      # Header section. Optional. Defaults to the common default.
     weight: -1 # Optional, defaults to 0. Negative comes later in navbar list.
       # Weight. Optinal. Default: 0. Positive numbers come earlier in the navbar
       # menu, negative numbers come later.
@@ -69,7 +65,7 @@ page_template: page
 draft_template: draft
 
 # Don't generate project files in the output site
-exclude: ["Gemfile", "LICENSE", "README"]
+exclude: ["Gemfile", "LICENSE", "README", "bin"]
 
 plugins:
   - bootstrap
