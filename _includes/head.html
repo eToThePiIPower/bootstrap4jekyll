@@ -1,5 +1,6 @@
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% if page.layout == 'index' %}
@@ -11,6 +12,8 @@
   {% endif %}
 
   <!-- Twitter Cards -->
+  <meta name="twitter:site" content="@{{ site.owner.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
   {% if page.header.image %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ site.url }}/images/headers/{{ page.header.image }}">
@@ -22,9 +25,6 @@
   {% endif %}
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-  {% if site.owner.twitter %}
-  <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
-  {% endif %}
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="{{ site.title }}">
