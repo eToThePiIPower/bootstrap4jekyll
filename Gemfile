@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.4.1'
+ruby '2.5.1'
 
 gem 'octopress', '~> 3.0'
 
 group :jekyll_plugins do
   gem 'bootstrap', '~> 4.0'
-  gem 'jekyll-assets', '~> 3.0.8'
 end

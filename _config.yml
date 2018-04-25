@@ -69,7 +69,6 @@ exclude: ["Gemfile", "LICENSE", "README", "bin"]
 
 plugins:
   - bootstrap
-  - jekyll-assets
 
 sass:
   sass_dir: _sass
