@@ -8,3 +8,8 @@ site_dir: _site
 headers:
   - filename: '^.*\.html$'
     content_type: 'text/html'
+  - filename: '^.*\.jpg$'
+    content_type: 'image/jpeg'
+  - filename: '^.*\.png$'
+    content_type: 'image/png'
+
