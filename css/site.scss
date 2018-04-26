@@ -72,3 +72,19 @@ a {
 .avoid-wrap {
   display: inline-block;
 }
+
+
+.list-inline-vbar {
+  .list-inline-item {
+    &:after {
+      content: "|";
+      margin-left: 1em;
+    }
+  }
+
+  .list-inline-item:last-child {
+    &:after {
+      content: "";
+    }
+  }
+}
