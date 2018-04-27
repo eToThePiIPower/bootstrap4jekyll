@@ -26,12 +26,7 @@
   margin-left: auto;
   padding-bottom: $spacer/4;
   padding-top: $spacer/4;
-  text-decoration: none;
   width: fit-content;
-
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 .card-header-tab + .card-img-top {

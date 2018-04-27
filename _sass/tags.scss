@@ -2,14 +2,6 @@
   .list-group-item {
     padding: $list-group-item-padding-y*0.75 $list-group-item-padding-x*0.75;
   }
-
-  .list-group-item-action {
-    text-decoration: none;
-  }
-}
-
-.tag-item-link {
-  text-decoration: none;
 }
 
 .jumbotron {
@@ -18,8 +10,4 @@
     margin-top: $spacer * 3;
     text-align: center;
   }
-}
-
-a.badge {
-  text-decoration: none;
 }
