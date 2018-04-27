@@ -30,3 +30,23 @@
     }
   }
 }
+
+@mixin inset-figure {
+  .code-highlight-caption {
+    box-shadow: 0 .125rem .25rem rgba($black, .175);
+  }
+
+  .code-highlight {
+    box-shadow: 0 .125rem .25rem rgba($black, .175) inset;
+  }
+
+  &:hover {
+    .code-highlight-caption {
+      box-shadow: 0 .5rem 1rem rgba($black, .175) 
+    }
+
+    .code-highlight {
+      box-shadow: 0 .5rem 1rem rgba($black, .175) inset;
+    }
+  }
+}

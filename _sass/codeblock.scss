@@ -25,41 +25,33 @@ div.highlighter-rouge {
 
 .code-highlight-figure {
   @extend .card;
-
+  @include inset-figure;
 
   .code-highlight-caption {
     @extend .card-header;
-    box-shadow: 0 .125rem .25rem rgba($black, .175);
 
     .code-highlight-caption-title {
       @extend .h6;
     }
 
     .code-highlight-caption-link {
+      @extend .btn;
+      @extend .btn-sm;
+      @extend .btn-primary;
       float: right;
-    }
-  }
-
-  &:hover {
-    .code-highlight-caption {
-      box-shadow: 0 .5rem 1rem rgba($black, .175) 
+      font-size: 64%;
     }
   }
 
   .code-highlight {
     @extend .card-body;
     background-color: $gray-100;
-    box-shadow: 0 .125rem .25rem rgba($black, .175) inset;
 
-    &:hover {
-      box-shadow: 0 .5rem 1rem rgba($black, .175) inset;
-    }
 
     .code-highlight-pre {
-      background-color: $gray-100;
-      margin-bottom: 0;
-
       @include code-numbering;
+      margin-bottom: 0;
+      white-space: pre-wrap;
     }
   }
 }
