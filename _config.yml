@@ -25,7 +25,12 @@ owner:
 # A default header image
 header:
   image: main.jpg
-  imagealt: Describe the site header image for screen reader users.
+  imagealt: The facade of a modern glass building.
+  title: Architecture Modern Building Facade
+  title-link: "https://pixabay.com/en/architecture-modern-building-facade-3136963/"
+  credit: Michael Gaida
+  credit-link: "https://pixabay.com/en/users/MichaelGaida-652234/"
+  license: cc0
 
 services:
   google_analytics: UA-XXXXX-Y
@@ -37,14 +42,19 @@ categories_meta:
   default:
     header:
       image: main.jpg
-      imagealt: Describe the default category index header image for screen reader users.
+      imagealt: The facade of a modern glass building.
+      title: Architecture Modern Building Facade
+      title-link: "https://pixabay.com/en/architecture-modern-building-facade-3136963/"
+      credit: Michael Gaida
+      credit-link: "https://pixabay.com/en/users/MichaelGaida-652234/"
+      license: cc0
   code:
     long_title: Software Development # Long Title: Optional. Defaults: short title
     description: Thoughts on Software Development # Description: Optional. Default: "Posts in the _ section"
     long_description: These are some of my thoughts on software development. # Long Description: Optional. Default: Description
-    header: # Header section. Optional. Defaults to the common default.
-      image: main.jpg
-      imagealt: Describe the category index header image for screen reader users.
+    # header: # Header section. Optional. Defaults to the common default.
+    #   image: main.jpg
+    #   imagealt: Closeup photo of black smartphone near black and gray pencil on black spiral notebook
     weight: -1 # Optional, defaults to 0. Negative comes later in navbar list.
       # Weight. Optinal. Default: 0. Positive numbers come earlier in the navbar
       # menu, negative numbers come later.

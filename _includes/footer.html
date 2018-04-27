@@ -30,11 +30,15 @@
     </ul>
 
     <p class="small">Copyright &copy {{ site.time | date: '%Y' }} {{ site.owner.name }}.
-       Except where otherside noted the content of this site
+       Except where otherwise noted the content of this site
        is licensed to the public under a
        <a href="https://creativecommons.org/licenses/by/4.0/">
          Creative Commons Attribution 4.0</a>
        license.
+      {% if page.layout == 'index' %}
+      Copyright to individual post header images shown on this index page are
+      listed in the main body of their respective posts.
+      {% endif %}
     </p>
 
     <p class="small">

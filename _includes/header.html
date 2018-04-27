@@ -10,7 +10,7 @@
   {% assign title_size=3 %}
 {% endif %}
 
-<header class="jumbotron jumbotron-fluid jumbotron-top bg-dark text-white"
+<header class="jumbotron jumbotron-fluid header-image bg-dark text-white"
         style="background-image: url('/images/headers/{{ page.header.image | default: site.header.image }}')">
   <div class="container">
 
@@ -39,6 +39,9 @@
       <span class="avoid-wrap">by <a href="/about">{{ site.owner.name }}</a></span>
     </div>
     {% endif %}
+  </div>
 
+  <div class="container-relative">
+    {% include header_attribution.html %}
   </div>
 </header>

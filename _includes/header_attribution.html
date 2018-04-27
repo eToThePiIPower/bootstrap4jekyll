@@ -1,0 +1,53 @@
+{% if page.header.image %}
+  {% if page.header.title %}
+    {% assign show_attribution=true %}
+    {% assign attribution_title=page.header.title %}
+    {% assign attribution_title_link=page.header.title-link %}
+    {% assign attribution_credit=page.header.credit %}
+    {% assign attribution_credit_link=page.header.credit-link %}
+    {% assign attribution_license=page.header.license %}
+  {% endif %}
+{% elsif site.header.image %}
+  {% if site.header.title %}
+    {% assign show_attribution=true %}
+    {% assign attribution_title=site.header.title %}
+    {% assign attribution_title_link=site.header.title-link %}
+    {% assign attribution_credit=site.header.credit %}
+    {% assign attribution_credit_link=site.header.credit-link %}
+    {% assign attribution_license=site.header.license %}
+  {% endif %}
+{% endif %}
+
+{% if show_attribution %}
+<aside class="header-attribution">
+  <a href="{{ attribution_title_link }}" target="_blank">{{ attribution_title }}</a>
+  by
+  <a href="{{ attribution_credit_link }}" target="_blank">{{ attribution_credit }}</a>.
+
+{% case attribution_license %}
+{% when 'cc-by-4' %}
+  Licensed under a
+  <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+    Creative Commons Attribution 4.0 International License
+  </a>.
+{% when 'cc-by-sa-4' %}
+  Licensed under a
+  <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+    Creative Commons Attribution-ShareAlike 4.0 International License
+  </a>.
+{% when 'cc-by-2' %}
+  Licensed under a
+  <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
+    Creative Commons Attribution 2.0 Generic License
+  </a>.
+{% when 'cc0' %}
+  Copyrights and related rights waived by the author via
+  <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">
+    CC0
+  </a>
+{% when 'reserved' %}
+  All rights reserved.
+{% else %}
+{% endcase %}
+</aside>
+{% endif %}
