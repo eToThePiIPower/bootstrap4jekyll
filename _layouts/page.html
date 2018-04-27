@@ -28,6 +28,14 @@ layout: default
       <section class="col-lg-9 offset-lg-2">
         {{ content }}
       </section>
+
+      {% if page.sharing %}
+      <hr class="col-lg-9 offset-lg-2 my-5 offset-md-1" />
+
+      <section class="col-lg-9 offset-lg-2 text-center">
+        {% include social_sharing.html %}
+      </section>
+      {% endif %}
     </div>
   </div>
 
