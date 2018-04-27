@@ -3,35 +3,7 @@ layout: default
 ---
 <article class="post-content">
 
-  {% if page.header %}
-  <header class="jumbotron jumbotron-fluid jumbotron-top bg-dark text-white"
-          style="background-image: url('/images/headers/{{ page.header.image }}')">
-  {% else %}
-  <header class="jumbotron jumbotron-fluid jumbotron-top bg-dark text-white"
-          style="background-image: url('/images/headers/{{ site.header.image }}')">
-  {% endif %}
-    <div class="container">
-      <h1 class="title-3 offset-lg-1">
-        {{ page.title }}
-      </h1>
-      <hr class="my-5 offset-md-1">
-      {% if page.subtitle %}
-      <p class="subtitle-3 offset-lg-1">
-        {{ page.subtitle }} 
-      </p>
-      {% endif %}
-      <div class="metatitle-3 text-muted text-right">
-        <span class="avoid-wrap">Posted on {{ page.date | date: '%A, %B %-d, %Y' }}</span>
-        <span class="avoid-wrap">by <a href="/about">{{ site.owner.name }}</a></span>
-      </div>
-    </div>
-
-    <div class="tags">
-      {% for tag in page.tags %}
-        <a class="badge badge-secondary" href="/tags/#{{ tag }}">{{ tag  }}</a>
-      {% endfor %}
-    </div>
-  </header>
+  {% include header.html %}
 
   <div class="container">
     <div class="row">

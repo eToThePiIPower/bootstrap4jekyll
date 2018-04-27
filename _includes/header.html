@@ -1,0 +1,44 @@
+{% if page.url == '/' %}
+  {% assign title_size=1 %}
+{% elsif page.layout == 'index' %}
+  {% assign title_size=2 %}
+{% elsif page.layout == 'resume' %}
+  {% assign title_size=2 %}
+{% elsif page.layout == 'page' %}
+  {% assign title_size=2 %}
+{% elsif page.layout == 'post' %}
+  {% assign title_size=3 %}
+{% endif %}
+
+<header class="jumbotron jumbotron-fluid jumbotron-top bg-dark text-white"
+        style="background-image: url('/images/headers/{{ page.header.image | default: site.header.image }}')">
+  <div class="container">
+
+    <h1 class="title-{{ title_size }}">
+      {{ page.title }}
+    </h1>
+
+    <hr class="my-5">
+
+    {% if page.subtitle %}
+    <p class="subtitle-{{ title_size }}">
+      {{ page.subtitle }}
+    </p>
+    {% endif %}
+
+    {% if page.layout == 'resume' %}
+    <a class="btn btn-outline-light text-center" href="{{ page.link }}">
+      <i class="fa fa-file-pdf-o"></i>
+      Download a PDF
+    </a>
+    {% endif %}
+
+    {% if page.layout == 'post' %}
+    <div class="metatitle-3 text-muted text-right">
+      <span class="avoid-wrap">Posted on {{ page.date | date: '%A, %B %-d, %Y' }}</span>
+      <span class="avoid-wrap">by <a href="/about">{{ site.owner.name }}</a></span>
+    </div>
+    {% endif %}
+
+  </div>
+</header>

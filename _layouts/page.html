@@ -3,25 +3,7 @@ layout: default
 ---
 <article class="page-content">
 
-  {% if page.header %}
-  <header class="jumbotron jumbotron-fluid jumbotron-top bg-dark text-white"
-          style="background-image: url('/images/headers/{{ page.header.image }}')">
-  {% else %}
-  <header class="jumbotron jumbotron-fluid jumbotron-top bg-dark text-white"
-          style="background-image: url('/images/headers/{{ site.header.image }}')">
-  {% endif %}
-    <div class="container">
-      <h1 class="title-2 offset-lg-1">
-        {{ page.title }}
-      </h1>
-      {% if page.subtitle %}
-      <hr class="my-5 offset-lg-1"/>
-      <p class="subtitle-2 offset-lg-1">
-        {{ page.subtitle }} 
-      </p>
-      {% endif %}
-    </div>
-  </header>
+  {% include header.html %}
 
   <div class="container">
     <div class="row">
