@@ -114,13 +114,11 @@
 }
 
 .resume-jobs {
-  .col-md-6 {
-    @media screen and (max-width: 767px) {
-      padding-bottom: $spacer;
+  .resume-job {
+    margin-bottom: $spacer;
 
-      &:last-child {
-        padding-bottom: 0;
-      }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

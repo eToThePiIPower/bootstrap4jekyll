@@ -58,7 +58,7 @@ slug: resume
         <div class="row">
           {% for job in site.resume-jobs %}
             {% if job.width %}
-            <div class="col-md-{{ job.width }}">
+            <div class="resume-job col-md-{{ job.width }}">
             {% else %}
             <div class="col-md-4">
             {% endif %}
