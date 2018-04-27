@@ -58,6 +58,8 @@ div.highlighter-rouge {
     .code-highlight-pre {
       background-color: $gray-100;
       margin-bottom: 0;
+
+      @include code-numbering;
     }
   }
 }

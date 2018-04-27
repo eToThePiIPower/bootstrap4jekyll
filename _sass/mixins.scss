@@ -1,0 +1,21 @@
+@mixin code-numbering {
+      display: table;
+      width: 100%;
+
+      .code-highlight-row.numbered {
+        display: table-row;
+        white-space: pre-wrap;
+
+        .code-highlight-line {
+          display: table-cell;
+          padding-left: $spacer;
+        }
+
+        &:before {
+          color: $gray-500;
+          content: attr(data-line);
+          display: table-cell;
+          text-align: right;
+        }
+      }
+}
