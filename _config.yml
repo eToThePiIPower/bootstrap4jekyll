@@ -52,6 +52,10 @@ categories_meta:
     long_title: Life, The Universe, and Everything
     description: So long, and thanks for all the fish
 
+# How many posts per index page
+paginate: 5
+paginate_path: "/:num/"
+
 # Default extension of new posts and pages
 post_ext: md
 page_ext: html

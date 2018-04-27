@@ -15,10 +15,13 @@ subtitle: Just a blog
     <section class="col-md-9">
       <h3 class="h3 text-muted mb-4">Latest Posts</h3>
 
-      {% include index-for.html posts=site.posts %}
+      {% include index-for.html posts=paginator.posts %}
 
     </section> <!-- /.col-md-9 -->
 
+    <section class="col-md-12 text-center">
+      {% include paginator.html %}
+    </section>
   </div> <!-- /.row -->
 </div>
 
