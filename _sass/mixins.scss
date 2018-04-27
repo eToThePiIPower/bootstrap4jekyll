@@ -1,21 +1,32 @@
 @mixin code-numbering {
-      display: table;
-      width: 100%;
+  display: table;
+  width: 100%;
 
-      .code-highlight-row.numbered {
-        display: table-row;
-        white-space: pre-wrap;
+  .code-highlight-row.numbered {
+    display: table-row;
+    white-space: pre-wrap;
 
-        .code-highlight-line {
-          display: table-cell;
-          padding-left: $spacer;
-        }
+    .code-highlight-line {
+      display: table-cell;
+      padding-left: $spacer;
+    }
 
-        &:before {
-          color: $gray-500;
-          content: attr(data-line);
-          display: table-cell;
-          text-align: right;
-        }
-      }
+    &.marked-line {
+      background-color: $gray-300;
+    }
+
+    &:not(.marked-line):before {
+      color: $gray-500;
+      content: attr(data-line);
+      display: table-cell;
+      text-align: right;
+    }
+
+    &.marked-line:before {
+      color: $gray-900;
+      content: attr(data-line);
+      display: table-cell;
+      text-align: right;
+    }
+  }
 }
