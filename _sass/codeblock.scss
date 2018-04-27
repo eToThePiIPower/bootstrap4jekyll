@@ -22,3 +22,42 @@ div.highlighter-rouge {
     user-select: none;
   }
 }
+
+.code-highlight-figure {
+  @extend .card;
+
+
+  .code-highlight-caption {
+    @extend .card-header;
+    box-shadow: 0 .125rem .25rem rgba($black, .175);
+
+    .code-highlight-caption-title {
+      @extend .h6;
+    }
+
+    .code-highlight-caption-link {
+      float: right;
+    }
+  }
+
+  &:hover {
+    .code-highlight-caption {
+      box-shadow: 0 .5rem 1rem rgba($black, .175) 
+    }
+  }
+
+  .code-highlight {
+    @extend .card-body;
+    background-color: $gray-100;
+    box-shadow: 0 .125rem .25rem rgba($black, .175) inset;
+
+    &:hover {
+      box-shadow: 0 .5rem 1rem rgba($black, .175) inset;
+    }
+
+    .code-highlight-pre {
+      background-color: $gray-100;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -62,6 +62,9 @@ categories_meta:
     long_title: Life, The Universe, and Everything
     description: So long, and thanks for all the fish
 
+# Source for render_code
+code_dir: code-examples
+
 # How many posts per index page
 paginate: 5
 paginate_path: "/:num/"
