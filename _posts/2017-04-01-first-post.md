@@ -7,6 +7,12 @@ tags:
   - sample post
   - jekyll
 date: 2017-01-01T00:00:00-00:00
+pre-asides:
+  -
+    class: warning
+    heading: Heads up!
+    text: The following post is a sample post. You should probably delete it and
+          replace it with some real content.
 ---
 Welcome to Jekyll Bootstrap, a new from-scratch iteration at a Jekyll theme,
 written using [Bootstrap v4](http://getbootstrap.com). This *first paragraph* will appear in the index

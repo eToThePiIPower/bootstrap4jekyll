@@ -1,0 +1,46 @@
+.aside {
+  @extend .alert;
+  .aside-heading {
+    &:before {
+      font: normal normal normal $h5-font-size/1 FontAwesome;
+      -webkit-font-smoothing: antialiasing;
+      padding-right: 0.5*$spacer;
+    }
+  }
+}
+
+.aside-info {
+  @extend .alert-info;
+  .aside-heading {
+    &:before {
+      content: "\f15c";
+    }
+  }
+}
+
+.aside-success {
+  @extend .alert-success;
+  .aside-heading {
+    &:before {
+      content: "\f164";
+    }
+  }
+}
+
+.aside-warning {
+  @extend .alert-warning;
+  .aside-heading {
+    &:before {
+      content: "\f256";
+    }
+  }
+}
+
+.aside-danger {
+  @extend .alert-danger;
+  .aside-heading {
+    &:before {
+      content: "\f071";
+    }
+  }
+}

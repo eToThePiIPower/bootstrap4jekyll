@@ -7,6 +7,17 @@ layout: default
 
   <div class="container">
     <div class="row">
+      {% if page.pre-asides %}
+      {% for aside in page.pre-asides %}
+      <aside class="col-lg-9 offset-lg-2">
+        <div class="aside aside-{{ aside.class }}">
+          <strong class="aside-heading">{{ aside.heading }}:</strong>
+          <span class="aside-text">{{ aside.text }}</span>
+        </div>
+      </aside>
+      {% endfor %}
+      {% endif %}
+
       <section class="col-lg-9 offset-lg-2">
         {{ content }}
       </section>
