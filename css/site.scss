@@ -35,9 +35,11 @@
 
 .post-content
 {
-  p:first-child {
-    font-size: $lead-font-size;
-    font-weight: $lead-font-weight;
+  .main-content {
+    >p:first-child {
+      font-size: $lead-font-size;
+      font-weight: $lead-font-weight;
+    }
   }
 
   .footnotes {
