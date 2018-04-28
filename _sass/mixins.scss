@@ -4,7 +4,6 @@
 
   .code-highlight-row.numbered {
     display: table-row;
-    white-space: pre-wrap;
 
     .code-highlight-line {
       display: table-cell;
@@ -12,11 +11,7 @@
       padding-right: 1.25*$spacer;
     }
 
-    &.marked-line {
-      background: linear-gradient(to right, $gray-300, transparent);
-    }
-
-    &:not(.marked-line):before {
+    &:before {
       color: $gray-500;
       content: attr(data-line);
       display: table-cell;
@@ -24,26 +19,28 @@
       text-align: right;
       word-break: normal;
     }
-
-    &.marked-line:before {
-      background: linear-gradient(to left, $gray-300, transparent);
-      color: $gray-900;
-      content: attr(data-line);
-      display: table-cell;
-      padding-left: 1.25*$spacer;
-      text-align: right;
-      word-break: normal;
-    }
-
-    &.marked-line.start-marked-line {
-      background: linear-gradient(80deg, $gray-300, transparent);
-    }
-
-    &.marked-line.end-marked-line {
-      background: linear-gradient(100deg, $gray-300, transparent);
-    }
   }
 }
+
+@mixin code-marking {
+  &.marked-line {
+    background: linear-gradient(to right, $gray-300, transparent);
+  }
+
+  &.marked-line:before {
+    background: linear-gradient(to left, $gray-300, transparent);
+    color: $gray-900;
+  }
+
+  &.marked-line.start-marked-line {
+    background: linear-gradient(80deg, $gray-300, transparent);
+  }
+
+  &.marked-line.end-marked-line {
+    background: linear-gradient(100deg, $gray-300, transparent);
+  }
+}
+
 
 @mixin inset-figure {
   .code-highlight-caption {

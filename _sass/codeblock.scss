@@ -51,6 +51,7 @@ div.highlighter-rouge {
     padding-right: 0;
 
     .code-highlight-row {
+      @include code-marking;
       padding-left: 1.25*$spacer;
       padding-right: 1.25*$spacer;
     }
