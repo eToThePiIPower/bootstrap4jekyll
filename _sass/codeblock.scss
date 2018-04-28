@@ -61,4 +61,13 @@ div.highlighter-rouge {
       white-space: pre-wrap;
     }
   }
+
+  .code-highlight-caption-link {
+    font-size: 0 !important;
+    &:before {
+      font: normal normal normal 14px/1 FontAwesome;
+      -webkit-font-smoothing: antialiasing;
+      content: "\f019";
+    }
+  }
 }
