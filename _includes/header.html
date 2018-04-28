@@ -34,10 +34,18 @@
     {% endif %}
 
     {% if page.layout == 'post' %}
+
     <div class="metatitle-3 text-muted text-right">
       <span class="avoid-wrap">Posted on {{ page.date | date: '%A, %B %-d, %Y' }}</span>
       <span class="avoid-wrap">by <a href="/about">{{ site.owner.name }}</a></span>
     </div>
+
+    <div class="tags">
+    {% for tag in page.tags %}
+      <a href="/tags/#{{ tag }}" class="tag tag-outline-light">{{ tag }}</a>
+    {% endfor %}
+    </div>
+
     {% endif %}
   </div>
 

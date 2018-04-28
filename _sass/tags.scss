@@ -11,3 +11,35 @@
     text-align: center;
   }
 }
+
+.tag {
+  display: inline-block;
+  padding: $badge-padding-y $badge-padding-x;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 2*$badge-border-radius 2*$badge-border-radius 2*$badge-border-radius 0*$badge-border-radius;
+
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+}
+
+.tag-outline-light {
+  background-color: transparent;
+  border: 1px solid $light;
+  color: $light;
+
+  &[href] {
+    @include hover-focus {
+      background-color: transparent;
+      border-color: darken($light, 10%);
+      color: darken($light, 10%);
+      text-decoration: none;
+    }
+  }
+}
