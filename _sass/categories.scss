@@ -27,6 +27,8 @@
   padding-bottom: $spacer/4;
   padding-top: $spacer/4;
   width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
 }
 
 .card-header-tab + .card-img-top {
