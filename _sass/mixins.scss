@@ -22,6 +22,7 @@
       display: table-cell;
       padding-left: 1.25*$spacer;
       text-align: right;
+      word-break: normal;
     }
 
     &.marked-line:before {
@@ -31,6 +32,7 @@
       display: table-cell;
       padding-left: 1.25*$spacer;
       text-align: right;
+      word-break: normal;
     }
 
     &.marked-line.start-marked-line {

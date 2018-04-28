@@ -46,6 +46,7 @@ div.highlighter-rouge {
   .code-highlight {
     @extend .card-body;
     background-color: $gray-100;
+    overflow: auto;
     padding-left: 0;
     padding-right: 0;
 
@@ -58,7 +59,8 @@ div.highlighter-rouge {
       @include code-numbering;
       background-color: transparent;
       margin-bottom: 0;
-      white-space: pre-wrap;
+      white-space: pre;
+      word-break: break-word;
     }
   }
 
