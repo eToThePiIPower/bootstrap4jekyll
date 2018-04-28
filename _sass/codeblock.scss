@@ -46,10 +46,17 @@ div.highlighter-rouge {
   .code-highlight {
     @extend .card-body;
     background-color: $gray-100;
+    padding-left: 0;
+    padding-right: 0;
 
+    .code-highlight-row {
+      padding-left: 1.25*$spacer;
+      padding-right: 1.25*$spacer;
+    }
 
     .code-highlight-pre {
       @include code-numbering;
+      background-color: transparent;
       margin-bottom: 0;
       white-space: pre-wrap;
     }

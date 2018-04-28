@@ -8,25 +8,37 @@
 
     .code-highlight-line {
       display: table-cell;
-      padding-left: $spacer;
+      padding-left: 1.25*$spacer;
+      padding-right: 1.25*$spacer;
     }
 
     &.marked-line {
-      background-color: $gray-300;
+      background: linear-gradient(to right, $gray-300, transparent);
     }
 
     &:not(.marked-line):before {
       color: $gray-500;
       content: attr(data-line);
       display: table-cell;
+      padding-left: 1.25*$spacer;
       text-align: right;
     }
 
     &.marked-line:before {
+      background: linear-gradient(to left, $gray-300, transparent);
       color: $gray-900;
       content: attr(data-line);
       display: table-cell;
+      padding-left: 1.25*$spacer;
       text-align: right;
+    }
+
+    &.marked-line.start-marked-line {
+      background: linear-gradient(80deg, $gray-300, transparent);
+    }
+
+    &.marked-line.end-marked-line {
+      background: linear-gradient(100deg, $gray-300, transparent);
     }
   }
 }
