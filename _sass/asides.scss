@@ -46,9 +46,20 @@
 }
 
 .aside-sticky {
-  >.card,
-  >.list-group {
-    position: sticky;
-    top: 0px;
+  @include media-breakpoint-up(md) {
+    >.card,
+    >.list-group {
+      position: sticky;
+      top: $spacer;
+    }
+  }
+}
+
+.aside-hr {
+  margin-top: 2*$spacer;
+  margin-bottom: 1.5*$spacer;
+
+  @include media-breakpoint-up(md) {
+    display: none;
   }
 }
