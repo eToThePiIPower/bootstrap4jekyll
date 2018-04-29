@@ -44,3 +44,11 @@
     }
   }
 }
+
+.aside-sticky {
+  >.card,
+  >.list-group {
+    position: sticky;
+    top: 0px;
+  }
+}
