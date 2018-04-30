@@ -20,6 +20,20 @@
 </script>
 <!-- End navbar active selection -->
 
+<!-- Hide popovers on lose focus -->
+<script>
+$(document).mouseup(function(event) {
+  var container = $('.popover:visible');
+  if(!container.is(event.target) && container.has(event.target).length === 0) {
+    // Hide all popovers
+    $('.popover:visible').each(function() {
+      $(this).popoverX('hide');
+    });
+  }
+});
+</script>
+<!-- End hide popovers-->
+
 {% if site.services.google_analytics %}
 <!-- Google Analytics -->
 <script>
