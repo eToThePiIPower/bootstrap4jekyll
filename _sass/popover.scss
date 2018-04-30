@@ -1,5 +1,7 @@
 
 .popover {
+  display: none;
+
   @include media-breakpoint-down(sm) {
     max-width: calc(100% - 2rem);
     margin-right: 1rem;
