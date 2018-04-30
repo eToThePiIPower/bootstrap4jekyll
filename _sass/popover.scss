@@ -51,12 +51,9 @@
     }
   }
 
-  &.left,
-  &.right {
-    .arrow:before {
-      // manuall replace with the color of the photo image for the main author,
-      // or delete to leave as white.
-      // border-top-color: $primary!important;
+  &.left {
+    .arrow:after {
+      border-left-color: currentColor!important;
     }
   }
 }
