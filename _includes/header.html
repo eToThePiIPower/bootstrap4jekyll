@@ -39,7 +39,7 @@
       <span class="avoid-wrap">Posted on {{ page.date | date: '%A, %B %-d, %Y' }}</span>
       <span class="avoid-wrap">by
         <a href="#" data-toggle="popover-x" data-target="#authorPopover-{{ page.slug }}"
-           data-placement="bottom">{{ site.owner.name }}</a>
+           data-placement="auto">{{ site.owner.name }}</a>
       </span>
       {% include author_popover.html post=page %}
     </div>

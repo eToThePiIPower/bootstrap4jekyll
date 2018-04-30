@@ -1,12 +1,5 @@
-
 .popover {
   display: none;
-
-  @include media-breakpoint-down(sm) {
-    max-width: calc(100% - 2rem);
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
 
   .popover-title {
     padding: $card-spacer-y $card-spacer-x;
