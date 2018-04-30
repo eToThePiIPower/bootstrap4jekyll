@@ -33,7 +33,11 @@
   </section>
   <footer class="card-footer small text-muted text-right">
     Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
-    by <a href="/about">{{ site.owner.name }}</a>
+    <span class="avoid-wrap">by
+      <a href="#" data-toggle="popover-x" data-target="#authorPopover-{{ post.slug }}"
+          data-placement="bottom">{{ site.owner.name }}</a>
+    </span>
+    {% include author_popover.html post=post %}
   </footer>
 </article>
 {% endfor %}

@@ -1,0 +1,36 @@
+{% assign post=include.post %}
+
+<div id="authorPopover-{{ post.slug }}" class="popover popover-default">
+  <div class="arrow"></div>
+  <div class="popover-title h5">
+    <span class="close pull-right" data-dismiss="popover-x">&times;</span>
+    {{ site.owner.name }}
+  </div>
+  <img class="popover-img" src="/images/{{ site.owner.image }}" alt="{{ site.owner.imagealt }}">
+  <div class="popover-content">
+    <p>{{ site.owner.bio }}</p>
+  </div>
+  <div class="btn-group d-flex" role="group">
+    <a class="btn btn-secondary w-100" href="https://twitter.com/{{ site.owner.twitter }}">
+      <i class="fa fa-twitter fa-fw">
+        <span class="sr-only">Contact me on Twitter</span>
+      </i>
+    </a>
+    <a class="btn btn-secondary w-100" href="https://linkedin.com/in/{{ site.owner.linkedin }}">
+      <i class="fa fa-linkedin fa-fw">
+        <span class="sr-only">Contact me on LinkedIn</span>
+      </i>
+    </a>
+    <a class="btn btn-secondary w-100" href="https://github.com/{{ site.owner.github }}">
+      <i class="fa fa-github fa-fw">
+        <span class="sr-only">See my repositories on Github</span>
+      </i>
+    </a>
+    <a class="btn btn-secondary w-100" href="mailto:{{ site.owner.email }}">
+      <i class="fa fa-envelope fa-fw">
+        <span class="sr-only">Contact me via email</span>
+      </i>
+    </a>
+  </div>
+  <a class="btn btn-dark btn-popover-bottom" href="/about">About me</a>
+</div>

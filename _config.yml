@@ -14,9 +14,12 @@ timezone: UTC
 
 owner:
   name: Jane Doe
+  email: jane_doe@example.com
   bio:
     This is my blog. There are many like it but this
     one is mine.
+  image: photo.png
+  imagealt: A description of your photo for screen reader users.
   twitter: jane_doe  # twitter handle (without the @)
   github: jane_doe  # github handle
   linkedin: jane_doe # linkedin easy name (the part after the /in/ in your URL)

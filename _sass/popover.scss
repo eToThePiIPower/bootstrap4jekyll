@@ -1,0 +1,46 @@
+
+.popover {
+  @include media-breakpoint-down(sm) {
+    max-width: calc(100% - 2rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .popover-title {
+    padding: $card-spacer-y $card-spacer-x;
+    margin-bottom: 0; // Removes the default margin-bottom of <hN>
+    background-color: $card-cap-bg;
+    border-bottom: $card-border-width solid $card-border-color;
+
+    &:first-child {
+      @include border-radius($card-inner-border-radius
+      $card-inner-border-radius 0 0);
+    }
+  }
+
+  .popover-img {
+    width: 100%;
+  }
+
+  .popover-content {
+    flex: 1 1 auto;
+    padding: $card-spacer-x;
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-group {
+    .btn {
+      border-radius: 0;
+    }
+  }
+
+  .btn-popover-bottom {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-family: $font-family-sans-serif;
+  }
+}
