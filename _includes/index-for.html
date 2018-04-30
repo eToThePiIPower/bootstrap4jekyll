@@ -35,7 +35,7 @@
     Posted on {{ post.date | date: '%A, %B %-d, %Y' }}
     <span class="avoid-wrap">by
       <a href="#" data-toggle="popover-x" data-target="#authorPopover-{{ post.slug }}"
-          data-placement="bottom">{{ site.owner.name }}</a>
+          data-placement="auto">{{ site.owner.name }}</a>
     </span>
     {% include author_popover.html post=post %}
   </footer>
