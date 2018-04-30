@@ -38,4 +38,25 @@
     border-top-left-radius: 0;
     font-family: $font-family-sans-serif;
   }
+
+  &.top {
+    .arrow:after {
+      border-top-color: $dark!important;
+    }
+  }
+
+  &.bottom {
+    .arrow:after {
+      border-top-color: $light!important;
+    }
+  }
+
+  &.left,
+  &.right {
+    .arrow:before {
+      // manuall replace with the color of the photo image for the main author,
+      // or delete to leave as white.
+      // border-top-color: $primary!important;
+    }
+  }
 }
