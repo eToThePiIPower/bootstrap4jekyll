@@ -1,6 +1,8 @@
 .image-caption {
   @extend .card;
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 
   .caption-text {
     @extend .card-footer;
@@ -11,20 +13,29 @@
   }
 
   &.left {
-    float: left;
-    margin-right: 2*$spacer;
+    @include media-breakpoint-up(sm) {
+      float: left;
+      margin-right: 2*$spacer;
+    }
   }
 
   &.right {
-    float: right;
-    margin-left: 2*$spacer;
+    @include media-breakpoint-up(sm) {
+      float: right;
+      margin-left: 2*$spacer;
+    }
   }
 
   &.left,
   &.right {
     @include media-breakpoint-up(sm) {
+      width: calc(50% - #{$spacer});
+    }
+
+    @include media-breakpoint-up(md) {
       width: calc(33% - #{$spacer});
     }
+
 
     &.half {
       @include media-breakpoint-up(sm) {
@@ -32,23 +43,14 @@
       }
     }
 
-    &.half-and-third {
-      width: 50%;
-      @include media-breakpoint-up(sm) {
-        width: calc(33% - #{$spacer});
-      }
-    }
-
     &.quarter {
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(lg) {
         width: calc(25% - #{$spacer});
       }
     }
   }
 
   &.center {
-    margin-left: auto;
-    margin-right: auto;
     @include media-breakpoint-up(sm) {
       width: 66.7%;
     }
