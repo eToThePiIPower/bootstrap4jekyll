@@ -5,7 +5,7 @@ subtitle: "All The Power of Jekyll and Bootstrap 4"
 category: code
 tags:
   - sample post
-  - jekyll
+  - Jekyll
 date: 2017-01-01T00:00:00-00:00
 pre-asides:
   -
@@ -24,7 +24,7 @@ This post can be font in the `_posts` directory, following the convention of
 # How to Use Jekyll
 
 Jekyll offers all the power of Markdown, along with extended support for code
-snippets and other useful tech blogging tools. Code can be included in the
+snippets and other useful tech blogging tools. You can include code in the
 standard Markdown form:
 
 ```ruby
