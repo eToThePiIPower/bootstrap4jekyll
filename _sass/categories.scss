@@ -42,8 +42,12 @@
     color: color-yiq($color);
   }
 
-  header {
-    border-top: 4px solid $color;
+  .card-header-stripe {
+    border: 2px solid $color;
+    border-top-left-radius: calc(0.25rem - 1px);
+    margin: 0;
+    margin-bottom: -2px;
+    z-index: 1000;
   }
 }
 
