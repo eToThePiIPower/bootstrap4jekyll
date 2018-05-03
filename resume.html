@@ -6,41 +6,36 @@ permalink: /resume/
 menu-item: resume
 slug: resume
 ---
-<div class="row resume-main">
+<section class="row resume-main">
   <div class="col-md-4 push-md-8 resume-contact text-small">
     {% include resume_navs.html %}
   </div>
   <div class="col-md-8 pull-md-4 resume-baseinfo">
     <h1 class="resume-name h3">{{ site.data.resume.name }}</h1>
-    <h2 class="resume-title h4">{{ site.data.resume.title }}</h2>
+    <div class="resume-title h4">{{ site.data.resume.title }}</div>
     <p>{{ site.data.resume.copy }}</p>
   </div>
   <div class="col-md-12 resume-copy">
     {% if site.data.resume.more-heading %}
-    <h3 class="h5">{{ site.data.resume.more-heading }}</h2>
+    <h2 class="h5">{{ site.data.resume.more-heading }}</h2>
     {% endif %}
     {% if site.data.resume.more %}
     <p class="resume-more-copy">{{ site.data.resume.more }}</p>
     {% endif %}
     {% if site.data.resume.more2-head %}
-    <h3 class="h5">{{ site.data.resume.more2-heading }}</h2>
+    <h3 class="h6">{{ site.data.resume.more2-heading }}</h3>
     {% endif %}
     {% if site.data.resume.more2 %}
     <p class="resume-more-copy">{{ site.data.resume.more2 }}</p>
     {% endif %}
   </div>
-</div>
-<!-- /.row -->
+</section>
 
 <section class="row resume-cards">
   {% for card in site.resume-cards reversed %}
-    {% if card.width %}
-    <div class="col-md-{{ card.width }}">
-    {% else %}
-    <div class="col-md-4">
-    {% endif %}
-      <div class="card my-3">
-        <h3 class="card-header">{{ card.type }}</h3>
+    <div class="col-md-{{ card.width | default: 4 }}">
+      <div class="card resume-card">
+        <h1 class="card-header">{{ card.type }}</h1>
         <div class="card-body">
           {{ card.content }}
         </div>
@@ -48,21 +43,17 @@ slug: resume
     </div>
   {% endfor %}
 </section>
-<!-- /.row -->
 
 <section class="row resume-jobs">
   <div class="col-md-12">
-    <div class="card my-3">
-      <h3 class="card-header">Experience</h3>
+    <div class="card resume-card">
+      <h1 class="card-header">Experience</h1>
       <div class="card-body">
         <div class="row">
-          {% for job in site.resume-jobs %}
-            {% if job.width %}
-            <div class="resume-job col-md-{{ job.width }}">
-            {% else %}
-            <div class="col-md-4">
-            {% endif %}
-              <h4 class="job-title">{{ job.title }}</h4>
+          {% assign jobs = site.resume-jobs | reverse %}
+          {% for job in jobs %}
+            <div class="resume-job col-md-{{ job.width | default: 4 }}">
+              <h2 class="job-title">{{ job.title }}</h2>
               <p class="job-company">{{ job.company }}</p>
               <p class="job-extras">
                 <span class="job-extras-location">{{ job.location }}</span>
@@ -76,20 +67,19 @@ slug: resume
     </div>
   </div>
 </section>
-<!-- /.row -->
 
-<div class="row resume-education">
+<section class="row resume-education">
   <div class="col-md-12">
-    <div class="card my-3">
-      <h3 class="card-header">Education</h3>
+    <div class="card resume-card">
+      <h1 class="card-header">Education</h1>
       <div class="card-body">
         {% for degree in site.data.resume.degrees %}
           <div class="degree">
             <div class="degree-data">
-              <h4 class="degree-title-field">
+              <h2 class="degree-title-field">
                 <span class="degree-title">{{ degree.title }}</span>
                 <span class="degree-field">{{ degree.field }}</span>
-              </h4>
+              </h2>
               <div class="degree-extras">
                 <span class="degree-institution">{{ degree.institution }}</span>
                 <span class="degree-duration">{{ degree.duration }}</span>
@@ -101,4 +91,4 @@ slug: resume
       </div>
     </div>
   </div>
-</div>
+</section>

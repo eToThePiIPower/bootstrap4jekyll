@@ -1,35 +1,33 @@
-.resume-content {
-  .header-image {
-    .btn {
-      display: table;
-      margin: 0 auto;
-      text-decoration: none;
-    }
+.jumbotron {
+  .btn {
+    display: block;
+    margin: 2em auto 0;
+    width: fit-content;
+    width: -moz-fit-content; //scss-lint:disable VendorPrefix
   }
 }
 
-.resume-main {
-  .resume-title {
-    font-weight: 300;
-  }
+.resume-name {
+  font-size: $h1-font-size;
+}
 
-  h3 {
-    font-size: $h6-font-size;
-  }
+.resume-title {
+  font-style: italic;
+}
 
-  p {
-    margin-bottom: .5rem;
-  }
+.resume-main,
+.resume-card {
+  margin-bottom: 1.5 * $spacer;
 }
 
 .resume-contact {
   ul {
-    font-size: 89.4%; // sqrt(80%)
-    list-style: none;
     padding-left: 0;
+    list-style: none;
+    font-size: 80%;
 
     @include media-breakpoint-up(lg) {
-      font-size: 80%;
+      font-size: 91%; // sqrt(80%)
     }
 
     @include media-breakpoint-only(sm) {
@@ -43,82 +41,91 @@
   }
 
   a {
-    color: $gray-700
+    color: $gray-700;
   }
 
   .fa-envelope {
-    color: #ea4335;
+    color: $color-gmail;
   }
 
   .fa-github {
-    color: #6cc644;
+    color: $color-github;
   }
-  
+
   .fa-linkedin {
-    color: #0077b5;
+    color: $color-linkedin;
   }
 
   .fa-phone-square {
-    color: #61ed6a;
+    color: $color-phone;
   }
 
   .fa-twitter {
-    color: #1da1f2;
+    color: $color-twitter;
   }
 }
 
-.resume-cards,
-.resume-jobs,
-.resume-education {
-  font-size: $font-size-sm;
-  line-height: 1.25;
-
-  .card {
-    margin-bottom: .5rem!important;
-    margin-top: .5rem!important;
+.resume-card {
+  h1 {
+    font-size: $h4-font-size;
   }
 
-  p,
-  ul,
-  ol {
-    margin-bottom: .8rem;
-  }
-  
-  .card-header {
-    font-size: 1.12rem; /* sqrt($font-size-h5), eg half-step between h5 & h6 */
-  }
-
-  *:last-child {
+  h2 {
+    display: inline-block;
+    margin-top: 0.5 * $spacer;
     margin-bottom: 0;
+    font-size: $h5-font-size;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    a {
+      color: $gray-900;
+
+      &::after {
+        padding-right: 0.5 * $spacer;
+        padding-left: 0.5 * $spacer;
+        font: normal normal normal 14px/1 FontAwesome;
+        -webkit-font-smoothing: antialiasing;
+        content: "\f0c1";
+      }
+    }
   }
 
-  h4 {
+  h3,
+ .subtitle {
+    margin: 0;
     font-size: $h6-font-size;
-    display: inline-block;
-  }
-
-  .subtitle {
-    color: $gray-500;
-    display: inline-block;
     font-style: italic;
   }
 
-  h5 {
-    font-size: $font-size-sm;
+  ul,
+  p {
+    margin-bottom: 0;
   }
-
-  .job-company, .degree-institution { font-style: italic; margin-bottom: 0; }
-  .job-extras, .degree-notes { font-size: 89.4%; }
-  .job-extras .job-extras-duration,
-  .degree-extras .degree-duration { float: right; }
 }
 
-.resume-jobs {
-  .resume-job {
-    margin-bottom: $spacer;
+.resume-job,
+.degree {
+  margin-bottom: $spacer;
 
-    &:last-child {
-      margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-company,
+  .degree-institution {
+    font-style: italic;
+  }
+
+  .job-extras,
+  .degree-extras {
+    font-size: $font-size-sm;
+
+    .job-extras-duration,
+    .degree-duration {
+      float: right;
     }
   }
 }
