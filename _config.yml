@@ -89,7 +89,7 @@ page_template: page
 draft_template: draft
 
 # Don't generate project files in the output site
-exclude: ["Gemfile", "LICENSE", "README", "CODE_OF_CONDUCT", "bin"]
+exclude: ["Gemfile", "LICENSE", "README", "CODE_OF_CONDUCT", "bin", "Rakefile", "s3_website.yml"]
 
 plugins:
   - bootstrap
