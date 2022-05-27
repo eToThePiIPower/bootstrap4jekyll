@@ -3,7 +3,11 @@
 
   {% include head.html %}
 
+  {% if page.slug %}
   <body id="{{ page.slug }}">
+  {% else %}
+  <body id="{{ site.root-slug }}">
+  {% endif %}
     {% include navbar.html %}
 
     {{ content }}

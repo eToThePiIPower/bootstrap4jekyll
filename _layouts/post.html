@@ -19,19 +19,21 @@ layout: default
       {% endif %}
 
       <section class="col-lg-9 offset-lg-2 main-content">
+        <h2 class="display-none">Main Content</h2>
         {{ content }}
       </section>
 
       <hr class="col-lg-9 offset-lg-2 my-5 offset-md-1" />
 
       <section class="col-lg-9 offset-lg-2 text-center">
+        <h2 class="display-none">Social Sharing Links</h2>
         {% include social_sharing.html %}
       </section>
 
       {% if site.services.disqus_shortname and page.comments %}
       <section class="col-lg-9 offset-lg-2">
         <div class="card">
-          <div class="card-header">Comments</div>
+          <h2 class="card-header">Comments</h2>
           <div class="card-body">
             {% include comments.html %} 
           </div>
