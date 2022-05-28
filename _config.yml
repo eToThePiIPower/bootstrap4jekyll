@@ -43,15 +43,6 @@ services:
 # Category pages
 category_dir: /
 categories_meta:
-  default:
-    header:
-      image: main.jpg
-      imagealt: The facade of a modern glass building.
-      title: Architecture Modern Building Facade
-      title-link: "https://pixabay.com/en/architecture-modern-building-facade-3136963/"
-      credit: Michael Gaida
-      credit-link: "https://pixabay.com/en/users/MichaelGaida-652234/"
-      license: cc0
   code:
     long_title: Software Development # Long Title: Optional. Defaults: short title
     description: Thoughts on Software Development # Description: Optional. Default: "Posts in the _ section"
@@ -62,6 +53,15 @@ categories_meta:
     weight: -1 # Optional, defaults to 0. Negative comes later in navbar list.
       # Weight. Optinal. Default: 0. Positive numbers come earlier in the navbar
       # menu, negative numbers come later.
+    header:
+      image: code.jpg
+      imagealt: An stylized photo of minified JavaScript source code.
+      title: Minified JavaScript Source Code
+      title-link: "https://altphotos.com/photo/minified-javascript-source-code-908/"
+      credit: Markus Spiske
+      credit-link: "https://altphotos.com/authors/markusspiske/"
+      license: cc0 # one of cc0, cc-by-2, cc-by-4, cc-ba-sa-4, reserved
+
   life:
     long_title: Life, The Universe, and Everything
     description: So long, and thanks for all the fish

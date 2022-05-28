@@ -11,7 +11,9 @@
 {% endif %}
 
 <header class="jumbotron jumbotron-fluid header-image bg-dark text-white"
-        style="background-image: url('/images/headers/{{ page.header.image | default: site.header.image }}')">
+        style="background-image: url('/images/headers/{{ page.header.image |
+               default: site.categories_meta[page.category].header.image |
+               default: site.header.image }}')">
   <div class="container">
 
     <h1 class="title-{{ title_size }}">

@@ -7,6 +7,15 @@
     {% assign attribution_credit_link=page.header.credit-link %}
     {% assign attribution_license=page.header.license %}
   {% endif %}
+{% elsif site.categories_meta[page.category].header %}
+  {% if site.categories_meta[page.category].header.title %}
+    {% assign show_attribution=true %}
+    {% assign attribution_title=site.categories_meta[page.category].header.title %}
+    {% assign attribution_title_link=site.categories_meta[page.category].header.title-link %}
+    {% assign attribution_credit=site.categories_meta[page.category].header.credit %}
+    {% assign attribution_credit_link=site.categories_meta[page.category].header.credit-link %}
+    {% assign attribution_license=site.categories_meta[page.category].header.license %}
+  {% endif %}
 {% elsif site.header.image %}
   {% if site.header.title %}
     {% assign show_attribution=true %}
