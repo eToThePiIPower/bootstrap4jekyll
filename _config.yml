@@ -73,6 +73,12 @@ code_dir: code-examples
 paginate: 5
 paginate_path: "/:num/"
 
+# How many related posts to show. If => total number of posts, the carousel
+# behavior will be undefined.
+related_count: 2
+# Should the related posts section be full_width?
+related_wide: true
+
 # Default extension of new posts and pages
 post_ext: md
 page_ext: html

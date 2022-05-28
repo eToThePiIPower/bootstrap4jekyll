@@ -42,6 +42,8 @@ GEM
       popper_js (>= 1.14.3, < 2)
       sassc-rails (>= 2.0.0)
     builder (3.2.4)
+    classifier-reborn (2.2.0)
+      fast-stemmer (~> 1.0)
     colorator (1.1.0)
     colored (1.2)
     concurrent-ruby (1.1.10)
@@ -57,6 +59,7 @@ GEM
     erubi (1.10.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
+    fast-stemmer (1.0.2)
     ffi (1.13.1)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -188,6 +191,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-v1
   bootstrap
+  classifier-reborn (~> 2.2)
   jekyll-paginate
   kramdown-parser-gfm
   octopress

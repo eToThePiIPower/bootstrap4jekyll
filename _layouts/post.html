@@ -29,7 +29,23 @@ layout: default
         <h2 class="display-none">Social Sharing Links</h2>
         {% include social_sharing.html %}
       </section>
+{% if site.related_wide %}
+    </div>
+  </div>
 
+  <section class="w-100 my-5 order-lg-6">
+    {% include related_posts.html %}
+  </section>
+
+  <div class="container">
+    <div class="row">
+{% else %}
+
+  <section class="col-lg-12 my-5 order-lg-6">
+    {% include related_posts.html %}
+  </section>
+
+{% endif %}
       {% if site.services.disqus_shortname and page.comments %}
       <section class="col-lg-9 offset-lg-2">
         <div class="card">

@@ -1,0 +1,40 @@
+<div id="related" class="card slide carousel" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    {% for i in (0..site.related_count) %}
+      {% if i == 0 %}
+        <li data-target="#related" data-slide-to="{{ i }}" class="active"></li>
+      {% elsif i == site.related_count %}
+      {% else %}
+        <li data-target="#related" data-slide-to="{{ i }}"></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <!-- Content -->
+  <div class="carousel-inner">
+    {% for post in site.related_posts limit:site.related_count %}
+      {% assign class = "carousel-item" %}
+      {% if forloop.index == 1 %}{% assign class = "carousel-item active" %}{% endif %}
+      <div class="{{ class }}">
+        <img class="d-block w-100" src='/images/headers/{{ post.header.image |
+                    default: site.categories_meta[post.category].header.image |
+                    default: site.header.image }}'>
+
+        <div class="carousel-caption d-md-block">
+          <h3><a class="carousel-title-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#related" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#related" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
