@@ -21,7 +21,7 @@ summary, complete with **styling**.
 This post can be font in the `_posts` directory, following the convention of
 `YYYY-MM-DD-name-of-post.md`.
 
-# How to Use Jekyll
+## How to Use Jekyll
 
 Jekyll offers all the power of Markdown, along with extended support for code
 snippets and other useful tech blogging tools. You can include code in the

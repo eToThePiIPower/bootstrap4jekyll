@@ -20,7 +20,7 @@ This code of conduct outlines our expectations for all those who participate in
 the comment sections, as well as the consequences for unacceptable
 behavior.
 
-We invite all those who participate in the *{{ site.title }}* comments section 
+We invite all those who participate in the *{{ site.title }}* comments section
 to help us create safe and positive experiences for everyone.
 
 ## Creating a Welcoming and Inclusive Culture
@@ -53,15 +53,15 @@ The following are expected and requested of all community members:
   professionally. Be kind to others. Do not insult or put down other
   participants. Harassment and other exclusionary behavior are not acceptable.
   This includes but is not limited to:
-  - Violent threats.
-  - Discriminatory jokes.
-  - Posting sexually explicit or violent material.
-  - Posting (or threatening to post) other people's personally identifying
+  * Violent threats.
+  * Discriminatory jokes.
+  * Posting sexually explicit or violent material.
+  * Posting (or threatening to post) other people's personally identifying
     information.
-  - Personal insults, especially those using racist or sexist terms.
-  - Unwelcome sexual attention.
-  - Advocating for, or encouraging, any of the above behavior.
-  - Repeated harassment of others. In general, if someone asks you to stop, then
+  * Personal insults, especially those using racist or sexist terms.
+  * Unwelcome sexual attention.
+  * Advocating for, or encouraging, any of the above behavior.
+  * Repeated harassment of others. In general, if someone asks you to stop, then
     stop.
 * Moderators reserve the right to delete posts which they feel violate these
   terms.
