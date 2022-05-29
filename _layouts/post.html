@@ -7,26 +7,25 @@ layout: default
 
   <div class="container">
     <div class="row">
-      {% if page.pre-asides %}
-      {% for aside in page.pre-asides %}
-      <aside class="col-lg-9 offset-lg-2">
-        <div class="aside aside-{{ aside.class }}">
-          <strong class="aside-heading">{{ aside.heading }}:</strong>
-          <span class="aside-text">{{ aside.text }}</span>
-        </div>
-      </aside>
-      {% endfor %}
-      {% endif %}
 
       <section class="col-lg-9 offset-lg-2 main-content">
-        <h2 class="display-none">Main Content</h2>
+        {% if page.pre-asides %}
+        {% for aside in page.pre-asides %}
+        <aside class="aside-{{ aside.class }}">
+          <strong class="aside-heading">{{ aside.heading }}:</strong>
+          <span class="aside-text">{{ aside.text }}</span>
+        </aside>
+        {% endfor %}
+        {% endif %}
+
+        <h2 class="d-none">Main Content</h2>
         {{ content }}
       </section>
 
       <hr class="col-lg-9 offset-lg-2 my-5 offset-md-1" />
 
       <section class="col-lg-9 offset-lg-2 text-center">
-        <h2 class="display-none">Social Sharing Links</h2>
+        <h2 class="d-none">Social Sharing Links</h2>
         {% include social_sharing.html %}
       </section>
 {% if site.related_wide %}

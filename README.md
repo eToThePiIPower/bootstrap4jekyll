@@ -64,7 +64,8 @@ The following will likely be implemented before a 1.0 release.
 * [x] XML Feeds
 * [x] Easy Google Analytics setup (just add your key to `_config.yml`)
 * [ ] Media galleries (possibly using Bootstrap 4 carousel)
-* [ ] Support for extra formatting including both dark & light code blocks, call-out
-      sections (warning, danger, important...)
+* [ ] Support dark & light themed code blocks
+* [x] Call-out sections (warning, danger, important...)
+  * Use `{.warning}`, `{.important}`, etc.
 * [x] Read more
 * [x] Related posts

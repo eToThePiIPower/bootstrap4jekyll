@@ -1,58 +1,48 @@
 .aside {
   @extend .alert;
-  .aside-heading {
-    &:before {
-      font: normal normal normal $h5-font-size/1 FontAwesome;
-      -webkit-font-smoothing: antialiasing;
-      padding-right: 0.5*$spacer;
-    }
-  }
-}
-
-.aside-info {
-  @extend .alert-info;
-  .aside-heading {
-    &:before {
-      content: "\f15c";
-    }
-  }
-}
-
-.aside-success {
-  @extend .alert-success;
-  .aside-heading {
-    &:before {
-      content: "\f164";
-    }
-  }
-}
-
-.aside-warning {
-  @extend .alert-warning;
-  .aside-heading {
-    &:before {
-      content: "\f256";
-    }
-  }
-}
-
-.aside-danger {
-  @extend .alert-danger;
-  .aside-heading {
-    &:before {
-      content: "\f071";
-    }
+  &:before {
+    font: normal normal normal $h5-font-size/1 FontAwesome;
+    -webkit-font-smoothing: antialiasing;
+    padding-right: 0.5*$spacer;
   }
 }
 
 .aside-sticky {
   @include media-breakpoint-up(md) {
-    >.card,
-    >.list-group {
-      position: sticky;
-      top: $spacer;
-    }
+    position: sticky;
+    top: $spacer;
+    z-index: 100;
   }
+}
+
+.aside-danger, .aside-info, .aside-success, .aside-warning,
+.danger, .info, .success, .warning {
+  @extend .aside;
+  &.sticky { @extend .aside-sticky; }
+}
+
+.aside-info,
+.info {
+  @extend .alert-info;
+  &:before { content: "\f15c"; }
+}
+
+.aside-success,
+.success {
+  @extend .alert-success;
+  &:before { content: "\f164"; }
+}
+
+.aside-warning,
+.warning {
+  @extend .alert-warning;
+  &:before { content: "\f256"; }
+}
+
+.aside-danger,
+.danger {
+  @extend .alert-danger;
+  &:before { content: "\f071"; }
 }
 
 .aside-hr {
