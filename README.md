@@ -66,5 +66,5 @@ The following will likely be implemented before a 1.0 release.
 * [ ] Media galleries (possibly using Bootstrap 4 carousel)
 * [ ] Support for extra formatting including both dark & light code blocks, call-out
       sections (warning, danger, important...)
-* [ ] Read more
+* [x] Read more
 * [x] Related posts

@@ -13,6 +13,7 @@ pre-asides:
     heading: Heads up!
     text: The following post is a sample post. You should probably delete it and
           replace it with some real content.
+excerpt_separator: <!-- more --> # Defaults to \n\n, i.e. the first paragraph.
 ---
 Welcome to Jekyll Bootstrap, a new from-scratch iteration at a Jekyll theme,
 written using [Bootstrap v4](http://getbootstrap.com). This *first paragraph* will appear in the index
@@ -20,6 +21,8 @@ summary, complete with **styling**.
 
 This post can be font in the `_posts` directory, following the convention of
 `YYYY-MM-DD-name-of-post.md`.
+
+<!-- more -->
 
 ## How to Use Jekyll
 
