@@ -11,7 +11,14 @@ layout: default
       <section class="col-lg-9 offset-lg-2 main-content">
         {% if page.pre-asides %}
         {% for aside in page.pre-asides %}
+        {% if aside.class contains "sticky" %}
+        <aside id="sticky" class="aside-{{ aside.class }}">
+          <button type="button" class="close" data-target="#sticky" data-remove="sticky sticky-xs" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        {% else %}
         <aside class="aside-{{ aside.class }}">
+        {% endif %}
           <strong class="aside-heading">{{ aside.heading }}:</strong>
           <span class="aside-text">{{ aside.text }}</span>
         </aside>

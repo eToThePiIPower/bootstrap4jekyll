@@ -7,8 +7,25 @@
   }
 }
 
+.aside-sticky-xs {
+  @include media-breakpoint-up(xs) {
+    position: sticky;
+    top: $spacer;
+    z-index: 100;
+  }
+}
+
+#sticky:not(.sticky):not(.sticky-xs) button {
+  display: none;
+}
+#sticky:not(.sticky-xs) button {
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
 .aside-sticky {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     position: sticky;
     top: $spacer;
     z-index: 100;
@@ -19,6 +36,7 @@
 .danger, .info, .success, .warning {
   @extend .aside;
   &.sticky { @extend .aside-sticky; }
+  &.sticky-xs { @extend .aside-sticky-xs; }
 }
 
 .aside-info,
