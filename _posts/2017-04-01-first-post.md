@@ -2,6 +2,8 @@
 layout: post
 title: "Welcome to Jekyll Bootstrap"
 subtitle: "All The Power of Jekyll and Bootstrap 4"
+description: Welcome to Jekyll Bootstrap, a new from-scratch iteration at a
+             Jekyll theme, written using Bootstrap v4. This is an example post included with the theme.
 category: code
 tags:
   - sample post

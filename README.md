@@ -19,6 +19,8 @@ etc) are yet to be implemented.
     * `_data/resume.yml` for the main block
     * `_resume-cards/*.md` for individual cards such as skills, projects, etc
     * `_resume-jobs/*.md` for jobs in the 'Experience' card
+    * `resume.html` has some front-matter that you may want to edit, particularly
+      the description which is used in Twitter cards and Facebook OpenGraph.
 5. Add your Google Analytics and Disqus keys to
     `site.services.   google-analytics` and `site.services.disqus`
 
@@ -57,7 +59,7 @@ etc) are yet to be implemented.
 
 The following will likely be implemented before a 1.0 release.
 
-* [ ] Social media integration (twitter cards, open graph, etc)
+* [x] Social media integration (twitter cards, open graph, etc)
 * [x] Categories and Tags (Including index pages)
 * [x] Pagination on index pages
 * [x] Social media sharing links
@@ -67,5 +69,7 @@ The following will likely be implemented before a 1.0 release.
 * [ ] Support dark & light themed code blocks
 * [x] Call-out sections (warning, danger, important...)
   * Use `{.warning}`, `{.important}`, etc.
+  * One of them can be made `sticky`—with an unstick button—for important
+    post-related warnings (such as for draft and deprecated posts).`
 * [x] Read more
 * [x] Related posts
