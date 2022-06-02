@@ -1,0 +1,108 @@
+// sass-lint:disable one-declaration-per-line
+// sass-lint:disable nesting-depth
+
+// Color variables:
+$black: #242d38;
+$cyan: #66d9ef;
+$green: #a6e22e;
+$grey: #75715e;
+$red: #f92672;
+$purple: #ae81ff;
+$white: #f8f8f2;
+$yellow: #e6db74;
+
+.dark {
+  &.highlighter-rouge,
+  &.highlight {
+    background-color: $black;
+
+    code,
+    pre {
+      color: $white;
+      // Highlights taken from https://gist.github.com/asaaki/1007420  for Monokai theme
+      .hll { background-color: $black; }
+      .c { color: $grey; } // Comment
+      .err { background-color: $red; color: $black; } // Error
+      .k { color: $cyan; } // Keyword
+      .l { color: $purple; } // Literal
+      .n { color: $white; } // Name
+      .o { color: $red; } // Operator
+      .p { color: $white; } // Punctuation
+      .cm { color: $grey; } // Comment.Multiline
+      .cp { color: $grey; } // Comment.Preproc
+      .c1 { color: $grey; } // Comment.Single
+      .cs { color: $grey; } // Comment.Special
+      .ge { font-style: italic; } // Generic.Emph
+      .gs { font-weight: bold; } // Generic.Strong
+      .kc { color: $cyan; } // Keyword.Constant
+      .kd { color: $cyan; } // Keyword.Declaration
+      .kn { color: $red; } // Keyword.Namespace
+      .kp { color: $cyan; } // Keyword.Pseudo
+      .kr { color: $cyan; } // Keyword.Reserved
+      .kt { color: $cyan; } // Keyword.Type
+      .ld { color: $yellow; } // Literal.Date
+      .m { color: $purple; } // Literal.Number
+      .s { color: $yellow; } // Literal.String
+      .na { color: $green; } // Name.Attribute
+      .nb { color: $white; } // Name.Builtin
+      .nc { color: $green; } // Name.Class
+      .no { color: $cyan; } // Name.Constant
+      .nd { color: $green; } // Name.Decorator
+      .ni { color: $white; } // Name.Entity
+      .ne { color: $green; } // Name.Exception
+      .nf { color: $green; } // Name.Function
+      .nl { color: $white; } // Name.Label
+      .nn { color: $white; } // Name.Namespace
+      .nx { color: $green; } // Name.Other
+      .py { color: $white; } // Name.Property
+      .nt { color: $red; } // Name.Tag
+      .nv { color: $white; } // Name.Variable
+      .ow { color: $red; } // Operator.Word
+      .w { color: $white; } // Text.Whitespace
+      .mf { color: $purple; } // Literal.Number.Float
+      .mh { color: $purple; } // Literal.Number.Hex
+      .mi { color: $purple; } // Literal.Number.Integer
+      .mo { color: $purple; } // Literal.Number.Oct
+      .sb { color: $yellow; } // Literal.String.Backtick
+      .sc { color: $yellow; } // Literal.String.Char
+      .sd { color: $yellow; } // Literal.String.Doc
+      .s2 { color: $yellow; } // Literal.String.Double
+      .se { color: $purple; } // Literal.String.Escape
+      .sh { color: $yellow; } // Literal.String.Heredoc
+      .si { color: $yellow; } // Literal.String.Interpol
+      .sx { color: $yellow; } // Literal.String.Other
+      .sr { color: $yellow; } // Literal.String.Regex
+      .s1 { color: $yellow; } // Literal.String.Single
+      .ss { color: $yellow; } // Literal.String.Symbol
+      .bp { color: $white; } // Name.Builtin.Pseudo
+      .vc { color: $white; } // Name.Variable.Class
+      .vg { color: $white; } // Name.Variable.Global
+      .vi { color: $white; } // Name.Variable.Instance
+      .il { color: $purple; } // Literal.Number.Integer.Long
+      .gh { color: $yellow; } // Generic Heading & Diff Header
+      .gu { color: $grey; } // Generic.Subheading & Diff Unified/Comment?
+      .gd { color: $red; } // Generic.Deleted & Diff Deleted
+      .gi { color: $green; } // Generic.Inserted & Diff Inserted
+    }
+  }
+
+  &.language-console,
+  &.language-shell-session,
+  &.language-terminal {
+    background-color: $black;
+
+    code,
+    pre {
+      color: $white; // Text == Output
+      // .highlight { white-space: pre-wrap; }
+      // .err { color: $black; background-color: $red; } // Error
+      // .c { color: $grey; } // Comment
+      .nt { color: $cyan; } // Name.Tag == Argument
+      .nb { color: $cyan; } // Name.Builtin == Subcommand
+      .ni { color: $red; user-select: none; } // Name.Entity == Root Prompt
+      .w { color: $black; } // Text.Whitespace == User Prompt
+      .gp { color: $green; user-select: none; } // Text == Prompt
+      .go { color: $yellow; } // Text == Output
+    }
+  }
+}

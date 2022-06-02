@@ -44,7 +44,9 @@ Jekyll offers all the power of Markdown, along with extended support for code
 snippets and other useful tech blogging tools. You can include code in the
 standard Markdown form:
 
-{% comment %}You can make a fenced code block dark like this{% endcomment %}
+<!--- You can make fenced or highlight-tagged code blocks dark by adding a
+    {:.dark} liquid tag immediately before them, like this --->
+
 {:.dark}
 ```ruby
 class Dog

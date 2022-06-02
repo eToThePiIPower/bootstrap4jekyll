@@ -9,7 +9,6 @@
 
 @import 'asides';
 @import 'categories';
-@import 'codeblock';
 @import 'titles';
 @import 'header';
 @import 'image-captions';
@@ -21,6 +20,9 @@
 @import 'resume-print';
 @import 'sidebar';
 @import 'tags';
+
+@import 'code/dark';
+@import 'codeblock';
 @import 'codeblock-scrollbars';
 
 .post-content,
