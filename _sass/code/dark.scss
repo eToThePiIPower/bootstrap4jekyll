@@ -8,7 +8,8 @@ $green: #a6e22e;
 $grey: #75715e;
 $red: #f92672;
 $purple: #ae81ff;
-$white: #f8f8f2;
+$white: #f8f8f6;
+$dim: darken($white, 33%);
 $yellow: #e6db74;
 
 .dark {
@@ -93,16 +94,25 @@ $yellow: #e6db74;
 
     code,
     pre {
-      color: $white; // Text == Output
-      // .highlight { white-space: pre-wrap; }
-      // .err { color: $black; background-color: $red; } // Error
-      // .c { color: $grey; } // Comment
+      // Generic (commands & output)
+      color: $white; // Text == Other Commands
+      .c { color: $grey; } // Comment
+
+      // Command specific
+      .nb { color: $white; } // Name.Builtin == Builtin commands
       .nt { color: $cyan; } // Name.Tag == Argument
-      .nb { color: $cyan; } // Name.Builtin == Subcommand
-      .ni { color: $red; user-select: none; } // Name.Entity == Root Prompt
-      .w { color: $black; } // Text.Whitespace == User Prompt
-      .gp { color: $green; user-select: none; } // Text == Prompt
-      .go { color: $yellow; } // Text == Output
+
+      // Prompt styles
+      .gp { color: $green; font-weight: bold; user-select: none; } // Generic.Prompt
+      .ni { color: $red; font-weight: bold; user-select: none; } // Name.Entity == Root Prompt
+      .w { color: $black; } // Text.Whitespace = After prompts
+
+      // Output styles
+      .go { color: $dim; } // Generic.Output
+      .err, .gr {
+        color: $dim;
+        text-decoration: wavy underline $red 2px;
+      } // Error
     }
   }
 }
