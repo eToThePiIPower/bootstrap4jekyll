@@ -2,8 +2,8 @@
   .btn {
     display: block;
     margin: 2em auto 0;
+    // width: -moz-fit-content; //scss-lint:disable VendorPrefix
     width: fit-content;
-    width: -moz-fit-content; //scss-lint:disable VendorPrefix
   }
 }
 
@@ -22,10 +22,6 @@
 
 .resume-contact {
   ul {
-    padding-left: 0;
-    list-style: none;
-    font-size: 80%;
-
     @include media-breakpoint-up(lg) {
       font-size: 91%; // sqrt(80%)
     }
@@ -38,6 +34,10 @@
     @include media-breakpoint-only(xs) {
       text-align: center;
     }
+
+    font-size: 80%;
+    list-style: none;
+    padding-left: 0;
   }
 
   a {
@@ -72,9 +72,9 @@
 
   h2 {
     display: inline-block;
-    margin-top: 0.5 * $spacer;
-    margin-bottom: 0;
     font-size: $h5-font-size;
+    margin-bottom: 0;
+    margin-top: .5 * $spacer;
 
     &:first-child {
       margin-top: 0;
@@ -84,20 +84,20 @@
       color: $gray-900;
 
       &::after {
-        padding-right: 0.5 * $spacer;
-        padding-left: 0.5 * $spacer;
-        font: normal normal normal 14px/1 FontAwesome;
         -webkit-font-smoothing: antialiasing;
-        content: "\f0c1";
+        content: '\f0c1';
+        font: normal normal normal 14px/1 FontAwesome;
+        padding-left: .5 * $spacer;
+        padding-right: .5 * $spacer;
       }
     }
   }
 
   h3,
- .subtitle {
-    margin: 0;
+  .subtitle {
     font-size: $h6-font-size;
     font-style: italic;
+    margin: 0;
   }
 
   ul,

@@ -2,14 +2,14 @@
   display: none;
 
   .popover-title {
-    padding: $card-spacer-y $card-spacer-x;
-    margin-bottom: 0; // Removes the default margin-bottom of <hN>
     background-color: $card-cap-bg;
     border-bottom: $card-border-width solid $card-border-color;
+    margin-bottom: 0; // Removes the default margin-bottom of <hN>
+    padding: $card-spacer-y $card-spacer-x;
 
     &:first-child {
       @include border-radius($card-inner-border-radius
-      $card-inner-border-radius 0 0);
+        $card-inner-border-radius 0 0);
     }
   }
 
@@ -33,27 +33,29 @@
   }
 
   .btn-popover-bottom {
-    width: 100%;
-    border-top-right-radius: 0;
     border-top-left-radius: 0;
+    border-top-right-radius: 0;
     font-family: $font-family-sans-serif;
+    width: 100%;
   }
 
+  //sass-lint:disable no-important force-pseudo-nesting
   &.top {
-    .arrow:after {
-      border-top-color: $dark!important;
+    .arrow::after {
+      border-top-color: $dark !important;
     }
   }
 
   &.bottom {
-    .arrow:after {
-      border-top-color: $light!important;
+    .arrow::after {
+      border-top-color: $light !important;
     }
   }
 
   &.left {
-    .arrow:after {
-      border-left-color: currentColor!important;
+    .arrow::after {
+      border-left-color: currentColor !important;
     }
   }
+  //sass-lint:enable no-important force-pseudo-nesting
 }

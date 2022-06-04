@@ -1,21 +1,24 @@
+$deep-box-shadow: 0 .125rem .25rem rgba($black, .175);
+$deep-box-shadow-hover: 0 .5rem 1rem rgba($black, .175);
+
 @mixin code-numbering {
   display: table;
   width: 100%;
 
-  .code-highlight-row.numbered {
+  .code-highlight-row.numbered { //sass-lint:disable-line force-element-nesting
     display: table-row;
 
     .code-highlight-line {
       display: table-cell;
-      padding-left: 1.25*$spacer;
-      padding-right: 1.25*$spacer;
+      padding-left: 1.25 * $spacer;
+      padding-right: 1.25 * $spacer;
     }
 
-    &:before {
+    &::before {
       color: $gray-500;
       content: attr(data-line);
       display: table-cell;
-      padding-left: 1.25*$spacer;
+      padding-left: 1.25 * $spacer;
       text-align: right;
       word-break: normal;
     }
@@ -25,39 +28,39 @@
 @mixin code-marking {
   &.marked-line {
     background: linear-gradient(to right, $gray-300, transparent);
-  }
 
-  &.marked-line:before {
-    background: linear-gradient(to left, $gray-300, transparent);
-    color: $gray-900;
-  }
+    &::before {
+      background: linear-gradient(to left, $gray-300, transparent);
+      color: $gray-900;
+    }
 
-  &.marked-line.start-marked-line {
-    background: linear-gradient(80deg, $gray-300, transparent);
-  }
+    &.start-marked-line {
+      background: linear-gradient(80deg, $gray-300, transparent);
+    }
 
-  &.marked-line.end-marked-line {
-    background: linear-gradient(100deg, $gray-300, transparent);
+    &.end-marked-line {
+      background: linear-gradient(100deg, $gray-300, transparent);
+    }
   }
 }
 
 
 @mixin inset-figure {
   .code-highlight-caption {
-    box-shadow: 0 .125rem .25rem rgba($black, .175);
+    box-shadow: $deep-box-shadow;
   }
 
   .code-highlight {
-    box-shadow: 0 .125rem .25rem rgba($black, .175) inset;
+    box-shadow: $deep-box-shadow inset;
   }
 
   &:hover {
     .code-highlight-caption {
-      box-shadow: 0 .5rem 1rem rgba($black, .175) 
+      box-shadow: $deep-box-shadow-hover;
     }
 
     .code-highlight {
-      box-shadow: 0 .5rem 1rem rgba($black, .175) inset;
+      box-shadow: $deep-box-shadow-hover inset;
     }
   }
 }

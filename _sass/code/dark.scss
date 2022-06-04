@@ -109,10 +109,8 @@ $yellow: #e6db74;
 
       // Output styles
       .go { color: $dim; } // Generic.Output
-      .err, .gr {
-        color: $dim;
-        text-decoration: wavy underline $red 2px;
-      } // Error
+      .err { color: $dim; text-decoration: wavy underline $red 2px; } // Error
+      .gr { color: $dim; text-decoration: wavy underline $red 2px; } // Error
     }
   }
 }

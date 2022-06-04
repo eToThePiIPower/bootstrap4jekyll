@@ -1,13 +1,14 @@
-#related.carousel {
-  height: 20em;
+#related {
+  &.carousel {
+    height: 20em;
 
-  .carousel-caption {
-    top: 0;
-    bottom: auto;
-  }
-  .carousel-title-link,
-  .carousel-title-link:hover {
-    color: #fff;
+    .carousel-caption {
+      bottom: auto;
+      top: 0;
+    }
+
+    .carousel-title-link {
+      color: $white;
+    }
   }
 }
-

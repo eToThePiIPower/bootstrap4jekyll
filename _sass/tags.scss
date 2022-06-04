@@ -1,6 +1,6 @@
 .tag-group {
   .list-group-item {
-    padding: $list-group-item-padding-y*0.75 $list-group-item-padding-x*0.75;
+    padding: $list-group-item-padding-y * .75 $list-group-item-padding-x * .75;
   }
 }
 
@@ -13,15 +13,15 @@
 }
 
 .tag {
+  border-radius: 2 * $badge-border-radius 2 * $badge-border-radius 2 * $badge-border-radius 0 * $badge-border-radius;
   display: inline-block;
-  padding: $badge-padding-y $badge-padding-x;
   font-size: $badge-font-size;
   font-weight: $badge-font-weight;
   line-height: 1;
+  padding: $badge-padding-y $badge-padding-x;
   text-align: center;
-  white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 2*$badge-border-radius 2*$badge-border-radius 2*$badge-border-radius 0*$badge-border-radius;
+  white-space: nowrap;
 
   // Empty badges collapse automatically
   &:empty {

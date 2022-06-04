@@ -1,9 +1,9 @@
 .aside {
   @extend .alert;
-  &:before {
-    font: normal normal normal $h5-font-size/1 FontAwesome;
-    -webkit-font-smoothing: antialiasing;
-    padding-right: 0.5*$spacer;
+
+  &::before {
+    font: normal normal normal $h5-font-size FontAwesome;
+    padding-right: .5 * $spacer;
   }
 }
 
@@ -15,12 +15,19 @@
   }
 }
 
-#sticky:not(.sticky):not(.sticky-xs) button {
-  display: none;
-}
-#sticky:not(.sticky-xs) button {
-  @include media-breakpoint-down(xs) {
-    display: none;
+#sticky {
+  &:not(.sticky):not(.sticky-xs) { //sass-lint:disable-line force-pseudo-nesting
+    button {
+      display: none;
+    }
+  }
+
+  &:not(.sticky-xs) {
+    button {
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -42,32 +49,32 @@
 .aside-info,
 .info {
   @extend .alert-info;
-  &:before { content: "\f15c"; }
+  &::before { content: '\f15c'; }
 }
 
 .aside-success,
 .success {
   @extend .alert-success;
-  &:before { content: "\f164"; }
+  &::before { content: '\f164'; }
 }
 
 .aside-warning,
 .warning {
   @extend .alert-warning;
-  &:before { content: "\f256"; }
+  &::before { content: '\f256'; }
 }
 
 .aside-danger,
 .danger {
   @extend .alert-danger;
-  &:before { content: "\f071"; }
+  &::before { content: '\f071'; }
 }
 
 .aside-hr {
-  margin-top: 2*$spacer;
-  margin-bottom: 1.5*$spacer;
-
   @include media-breakpoint-up(md) {
     display: none;
   }
+
+  margin-bottom: 1.5 * $spacer;
+  margin-top: 2 * $spacer;
 }

@@ -1,13 +1,14 @@
 .image-caption {
   @extend .card;
-  width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  width: fit-content;
 
   .caption-text {
     @extend .card-footer;
     font-size: 89.4%;
-    p:first-child {
+
+    p:first-child { //sass-lint:disable-line force-pseudo-nesting
       font-size: inherit;
     }
   }
@@ -15,14 +16,14 @@
   &.left {
     @include media-breakpoint-up(sm) {
       float: left;
-      margin-right: 2*$spacer;
+      margin-right: 2 * $spacer;
     }
   }
 
   &.right {
     @include media-breakpoint-up(sm) {
       float: right;
-      margin-left: 2*$spacer;
+      margin-left: 2 * $spacer;
     }
   }
 
@@ -68,8 +69,7 @@
 
   &.image-caption-absolute {
     width: min-content;
-    width: -moz-min-content;
-    width: -webkit-min-content;
+
     .image-popup {
       width: initial;
     }

@@ -65,11 +65,15 @@ The following will likely be implemented before a 1.0 release.
 * [x] Social media sharing links
 * [x] XML Feeds
 * [x] Easy Google Analytics setup (just add your key to `_config.yml`)
-* [ ] Media galleries (possibly using Bootstrap 4 carousel)
-* [ ] Support dark & light themed code blocks
+* [x] Support dark & light themed code blocks
 * [x] Call-out sections (warning, danger, important...)
   * Use `{.warning}`, `{.important}`, etc.
   * One of them can be made `sticky`—with an unstick button—for important
     post-related warnings (such as for draft and deprecated posts).`
 * [x] Read more
 * [x] Related posts
+* [ ] Linting and refactoring
+
+### Ideas for versions after v1.0
+
+* [ ] Media galleries (possibly using Bootstrap 4 carousel)

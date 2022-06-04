@@ -1,0 +1,9 @@
+{
+    "first-heading-h1": { "level": 2},
+    "line-length": {
+      "line_length": 100,
+      "heading_line_length": 80,
+      "code_block_line_length": 120
+    },
+    "blanks-around-fences": false,
+}

@@ -40,7 +40,7 @@ probably published by mistake.
 Demonstration of the `console` lexer, also available under the names `shell-session` and `terminal`
 
 {:.dark}
-```console?lang=zsh&error=[2022&rprompt=%
+```console?lang=zsh&error=[2022&prompt=$&rprompt=%
 jdoe@jekyll $ jekyll serve --drafts --livereload
 Configuration file: /home/jdoe/Code/blog/_config.yml
             Source: /home/jdoe/Code/blog

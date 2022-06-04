@@ -1,14 +1,17 @@
-figure.highlight,
-div.highlighter-rouge {
+$deep-box-shadow: 0 .125rem .25rem rgba($black, .175);
+$deep-box-shadow-hover: 0 .5rem 1rem rgba($black, .175);
+
+figure.highlight, //sass-lint:disable-line force-element-nesting, no-qualifying-elements
+div.highlighter-rouge { //sass-lint:disable-line force-element-nesting, no-qualifying-elements
   background-color: $gray-100;
-  border: 1px solid rgba($black, .125);
+  border: 1px solid $border-color;
   border-radius: $border-radius;
-  box-shadow: 0 .125rem .25rem rgba($black, .175) inset;
-  padding: 1rem;
+  box-shadow: $deep-box-shadow inset;
   margin: 1rem 0;
-  
+  padding: 1rem;
+
   &:hover {
-    box-shadow: 0 .5rem 1rem rgba($black, .175) inset;
+    box-shadow: $deep-box-shadow-hover inset;
   }
 
   pre {
@@ -52,8 +55,8 @@ div.highlighter-rouge {
 
     .code-highlight-row {
       @include code-marking;
-      padding-left: 1.25*$spacer;
-      padding-right: 1.25*$spacer;
+      padding-left: 1.25 * $spacer;
+      padding-right: 1.25 * $spacer;
     }
 
     .code-highlight-pre {
@@ -66,11 +69,12 @@ div.highlighter-rouge {
   }
 
   .code-highlight-caption-link {
-    font-size: 0 !important;
-    &:before {
-      font: normal normal normal 14px/1 FontAwesome;
+    font-size: 0 !important; //sass-lint:disable-line no-important
+
+    &::before {
       -webkit-font-smoothing: antialiasing;
-      content: "\f019";
+      content: '\f019';
+      font: normal normal normal 14px/1 FontAwesome;
     }
   }
 }

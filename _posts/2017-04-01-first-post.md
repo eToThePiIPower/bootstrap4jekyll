@@ -24,9 +24,9 @@ pre-asides:
 excerpt_separator: <!-- more --> # Defaults to \n\n, i.e. the first paragraph.
 ---
 Welcome to Jekyll Bootstrap, a new from-scratch iteration at a Jekyll theme,
-written using [Bootstrap v4](http://getbootstrap.com). By default, the *first paragraph* will appear in the index
-summary, complete with **styling**. If you define an `excerpt_separator` in the post's frontmatter,
-you can have more or fewer paragraphs in the index excerpts. Try it!
+written using [Bootstrap v4](http://getbootstrap.com). By default, the *first paragraph* will appear
+in the index summary, complete with **styling**. If you define an `excerpt_separator` in the post's
+frontmatter, you can have more or fewer paragraphs in the index excerpts. Try it!
 
 This post can be found in the `_posts` directory, following the convention of
 `YYYY-MM-DD-name-of-post.md`.
@@ -34,9 +34,9 @@ This post can be found in the `_posts` directory, following the convention of
 <!-- more -->
 
 {:.info}
-**New as of v0.8.0** You can add callout sections with the `{:.info}`, `{:.success}`, `{:.warning}`, and `{:.danger}`
-If you want to make them sticky, change that to `{:.<class>.sticky}`, but make sure you avoid any sticky asides
-before the excerpt separator!.
+**New as of v0.8.0** You can add callout sections with the `{:.info}`, `{:.success}`, `{:.warning}`,
+and `{:.danger}` If you want to make them sticky, change that to `{:.<class>.sticky}`, but make sure
+you avoid any sticky asides before the excerpt separator!.
 
 ## How to Use Jekyll
 

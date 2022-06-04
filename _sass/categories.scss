@@ -1,34 +1,35 @@
+$index-border-color: rgba($black, .125);
+$index-border: 1px solid $index-border-color;
+
 .post-excerpt {
   border: 0;
 
   header {
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: $index-border;
     border-bottom: 0;
   }
 
   section {
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: $index-border;
     border-top: 0;
   }
 
   footer {
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: $index-border;
     border-top: 0;
   }
 }
 
 .card-header-tab {
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: $index-border;
   border-bottom: 0;
   display: inline-block;
   font-size: 80%;
-  margin-right: 0;
   margin-left: auto;
-  padding-bottom: $spacer/4;
-  padding-top: $spacer/4;
+  margin-right: 0;
+  padding-bottom: $spacer / 4;
+  padding-top: $spacer / 4;
   width: fit-content;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
 }
 
 .card-header-tab + .card-img-top {
@@ -44,7 +45,7 @@
 
   .card-header-stripe {
     border: 2px solid $color;
-    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-left-radius: calc(.25rem - 1px);
     margin: 0;
     margin-bottom: -2px;
     z-index: 1000;

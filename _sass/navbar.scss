@@ -1,5 +1,5 @@
 @include media-breakpoint-up(sm) {
   .navbar-dark {
-    background-color: transparent!important;
+    background-color: transparent !important; //sass-lint:disable-line no-important
   }
 }

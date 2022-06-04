@@ -29,21 +29,24 @@
 .page-content {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
-    margin-top: $spacer * 3 / 2;
     margin-bottom: $spacer;
+    margin-top: $spacer * 3 / 2;
   }
 }
 
-.site-footer a {
-  color: $gray-100;
+.site-footer {
+  a {
+    color: $gray-100;
+  }
 }
 
-.post-content
-{
+.post-content {
   .main-content {
-    >p:first-child {
-      font-size: $lead-font-size;
-      font-weight: $lead-font-weight;
+    >p {
+      &:first-child { //sass-lint:disable-line nesting-depth
+        font-size: $lead-font-size;
+        font-weight: $lead-font-weight;
+      }
     }
   }
 
@@ -61,7 +64,7 @@
 
 .text-white {
   .text-muted {
-    color: mix($text-muted, $white)!important;
+    color: mix($text-muted, $white) !important; // sass-lint:disable-line no-important
 
     a {
       color: mix($text-muted, $white);
@@ -77,15 +80,16 @@
 
 .list-inline-vbar {
   .list-inline-item {
-    &:after {
-      content: "|";
+    &::after {
+      content: '|';
       margin-left: 1em;
+    }
+
+    &:last-child {
+      &::after {
+        content: '';
+      }
     }
   }
 
-  .list-inline-item:last-child {
-    &:after {
-      content: "";
-    }
-  }
 }

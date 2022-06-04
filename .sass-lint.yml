@@ -1,0 +1,5 @@
+rules:
+  single-line-per-selector: 0
+  placeholder-in-extend: 0
+  no-ids: 0
+  no-vendor-prefixes: 0
