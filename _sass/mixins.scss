@@ -25,21 +25,21 @@ $deep-box-shadow-hover: 0 .5rem 1rem rgba($black, .175);
   }
 }
 
-@mixin code-marking {
+@mixin code-marking($color: $gray-300, $text: $gray-900) {
   &.marked-line {
-    background: linear-gradient(to right, $gray-300, transparent);
+    background: linear-gradient(to right, $color, 90%, transparent);
 
     &::before {
-      background: linear-gradient(to left, $gray-300, transparent);
-      color: $gray-900;
+      background: linear-gradient(to left, $color, transparent);
+      color: $text;
     }
 
     &.start-marked-line {
-      background: linear-gradient(80deg, $gray-300, transparent);
+      background: linear-gradient(80deg, $color, 90%, transparent);
     }
 
     &.end-marked-line {
-      background: linear-gradient(100deg, $gray-300, transparent);
+      background: linear-gradient(100deg, $color, 90%, transparent);
     }
   }
 }

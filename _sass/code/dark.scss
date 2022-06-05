@@ -11,8 +11,20 @@ $purple: #ae81ff;
 $white: #f8f8f6;
 $dim: darken($white, 33%);
 $yellow: #e6db74;
+$caption: darken($black, 5%);
+$mark: darken($blue, 33%);
 
 .dark {
+  &.code-highlight-figure .code-highlight .code-highlight-row {
+    @include code-marking($color: $mark, $text: $white);
+  }
+
+  &.code-highlight-figure .code-highlight-caption {
+   background-color: $caption;
+   color: $white;
+  }
+
+  &.code-highlight-figure .code-highlight,
   &.highlighter-rouge,
   &.highlight {
     background-color: $black;
