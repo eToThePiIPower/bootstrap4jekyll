@@ -1,6 +1,18 @@
 $deep-box-shadow: 0 .125rem .25rem rgba($black, .175);
 $deep-box-shadow-hover: 0 .5rem 1rem rgba($black, .175);
 
+.col80 {
+  font-size: 66%;
+
+  @include media-breakpoint-up(md) {
+    font-size: 73%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 88%;
+  }
+}
+
 figure.highlight, //sass-lint:disable-line force-element-nesting, no-qualifying-elements
 div.highlighter-rouge { //sass-lint:disable-line force-element-nesting, no-qualifying-elements
   background-color: $gray-100;

@@ -33,5 +33,5 @@ portions below, you can comment out those sections to render the code block corr
 
 The standard stylesheet uses the same `xcode` theme the rest of the codeblocks use. As with other code blocks, I've enabled a `dark` style here as well, used in the same way by adding `{:.dark}` before the `include_code` tag.
 
-{:.dark}
+{:.dark.col80}
 {% render_code example.rb title:"Example Ruby File" lang:ruby mark:37-46,50-59,63-72 url:test.rb %}
