@@ -14,7 +14,7 @@ sharing: true
 comments: true
 
 pre-asides: # Add as many notices as you want, or delete this block
-  - class: warning # primary, info, success, warning, danger
+  - class: warning sticky-xs # primary, info, success, warning, danger
     heading: Preview draft
     text:
       This post is an example post. If you can see this message, the post was
