@@ -29,9 +29,8 @@ pre-asides: # Add as many notices as you want, or delete this block
     heading: Includes unreleased features
     text:
       The `rprompt` or `root` options shown here are not part of the official 
-      `rouge` release, at least not yet. I'll be writing up a blog post on
-      them shortly and pushing my repo as a fork for those interested in the
-      feature, and this example post will be updated with the details then.
+      `rouge` release, but can be found on my fork under the
+      `feature.root-prompt` branch. 
 ---
 
 This post is an example post. If you can see this message, the post was
@@ -40,7 +39,8 @@ probably published by mistake.
 Demonstration of the `console` lexer, also available under the names `shell-session` and `terminal`
 
 {:.dark}
-```console?lang=zsh&error=[2022&prompt=$&rprompt=%
+```console?lang=shell&error=[2022&comments=true&rprompt=%
+jdoe@jekyll $ cd ~jdoe/Code/blog
 jdoe@jekyll $ jekyll serve --drafts --livereload
 Configuration file: /home/jdoe/Code/blog/_config.yml
             Source: /home/jdoe/Code/blog
@@ -52,6 +52,7 @@ Configuration file: /home/jdoe/Code/blog/_config.yml
     Server address: http://127.0.0.1:4000
   Server running... press ctrl-c to stop.
 [2022-06-02 09:49:30] ERROR `/favicon.ico' not found.
+^C
 # You can specify errors to highlight
 jdoe@jekyll $ su - # Root prompts require a patched rouge
 jekyll % rm -rf /
@@ -71,7 +72,8 @@ Options available to ```` ```console?```` include:
   Defaults to `$,#,%,>`, or `$,%,>` if comments are explicitly enabled.
 
 `rprompt`
-: Marks the end of a root prompt, only available in my patched `rouge`
+: Marks the end of a root prompt, only available in my patched
+  [`rouge`](https://github.com/etothepiipower/rouge)
 
 `comments`
 : Either `true` or `false` to explicitly controller comments.
