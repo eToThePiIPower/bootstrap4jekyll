@@ -23,7 +23,7 @@ header: # If you want to use the default site image, delete this block
   license: # cc0, cc-by-4, cc-ba-sa-4, cc-by-2, reserved, or delete for no license.
 
 pre-asides: # Add as many notices as you want, or delete this block
-  - class: warning sticky# primary, info, success, warning, danger
+  - class: warning sticky # primary, info, success, warning, danger
     heading: Preview draft
     text:
       This post is a first draft. This notice should be removed before final

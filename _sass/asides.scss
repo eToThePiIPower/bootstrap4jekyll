@@ -7,7 +7,7 @@
   }
 }
 
-.aside-sticky-xs {
+.aside-sticky {
   @include media-breakpoint-up(xs) {
     position: sticky;
     top: $spacer;
@@ -16,13 +16,13 @@
 }
 
 #sticky {
-  &:not(.sticky):not(.sticky-xs) { //sass-lint:disable-line force-pseudo-nesting
+  &:not(.sticky):not(.sticky-sm) { //sass-lint:disable-line force-pseudo-nesting
     button {
       display: none;
     }
   }
 
-  &:not(.sticky-xs) {
+  &:not(.sticky) {
     button {
       @include media-breakpoint-down(xs) {
         display: none;
@@ -31,7 +31,7 @@
   }
 }
 
-.aside-sticky {
+.aside-sticky-sm {
   @include media-breakpoint-up(sm) {
     position: sticky;
     top: $spacer;
@@ -43,7 +43,7 @@
 .danger, .info, .success, .warning {
   @extend .aside;
   &.sticky { @extend .aside-sticky; }
-  &.sticky-xs { @extend .aside-sticky-xs; }
+  &.sticky-sm { @extend .aside-sticky-sm; }
 }
 
 .aside-info,

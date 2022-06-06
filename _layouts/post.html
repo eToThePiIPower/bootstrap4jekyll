@@ -13,7 +13,7 @@ layout: default
         {% for aside in page.pre-asides %}
         {% if aside.class contains "sticky" %}
         <aside id="sticky" class="aside-{{ aside.class }}">
-          <button type="button" class="close" data-target="#sticky" data-remove="sticky sticky-xs" aria-label="Close">
+          <button type="button" class="close" data-target="#sticky" data-remove="sticky sticky-sm" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         {% else %}
