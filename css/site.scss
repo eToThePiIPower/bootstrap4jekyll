@@ -29,8 +29,10 @@
 .page-content {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
-    margin-bottom: $spacer;
-    margin-top: $spacer * 3 / 2;
+    &:not(.card-header) {
+      margin-bottom: $spacer;
+      margin-top: $spacer * 3 / 2;
+    }
   }
 }
 
