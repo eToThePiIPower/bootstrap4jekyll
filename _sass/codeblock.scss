@@ -1,6 +1,11 @@
 $deep-box-shadow: 0 .125rem .25rem rgba($black, .175);
 $deep-box-shadow-hover: 0 .5rem 1rem rgba($black, .175);
 
+pre,
+code {
+  font-family: "Roboto Mono", monospace;
+}
+
 .col80 {
   font-size: 66%;
 

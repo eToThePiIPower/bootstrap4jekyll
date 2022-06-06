@@ -108,11 +108,13 @@ $mark: darken($blue, 33%);
     pre {
       // Generic (commands & output)
       color: $white; // Text == Other Commands
+      font-weight: 400;
+
       .c { color: $grey; } // Comment
 
       // Command specific
       .nb { color: $white; } // Name.Builtin == Builtin commands
-      .nt { color: $cyan; } // Name.Tag == Argument
+      .nt { color: $purple; } // Name.Tag == Argument
 
       // Prompt styles
       .gp { color: $green; font-weight: bold; user-select: none; } // Generic.Prompt
@@ -120,9 +122,9 @@ $mark: darken($blue, 33%);
       .w { color: $black; } // Text.Whitespace = After prompts
 
       // Output styles
-      .go { color: $dim; } // Generic.Output
-      .err { color: $dim; text-decoration: wavy underline $red 2px; } // Error
-      .gr { color: $dim; text-decoration: wavy underline $red 2px; } // Error
+      .go { color: $dim; font-weight: 300; } // Generic.Output
+      .err { color: $dim; font-weight: 300; text-decoration: wavy underline $red 2px; } // Error
+      .gr { color: $dim; font-weight: 300; text-decoration: wavy underline $red 2px; } // Error
     }
   }
 }
