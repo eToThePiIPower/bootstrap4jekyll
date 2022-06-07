@@ -38,7 +38,7 @@ probably published by mistake.
 
 Demonstration of the `console` lexer, also available under the names `shell-session` and `terminal`
 
-{:.dark}
+{:.dark.80col}
 ```console?lang=shell&error=[2022&comments=true&rprompt=%
 jdoe@jekyll $ cd ~jdoe/Code/blog
 jdoe@jekyll $ jekyll serve --drafts --livereload
