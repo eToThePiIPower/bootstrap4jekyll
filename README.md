@@ -72,7 +72,17 @@ The following will likely be implemented before a 1.0 release.
     post-related warnings (such as for draft and deprecated posts).`
 * [x] Read more
 * [x] Related posts
-* [ ] Linting and refactoring
+* [x] Linting and refactoring
+
+### Refactors before final 1.0
+
+These are the refactors I'm working on starting with v1.0-beta1, that I will
+consider part of a 1.0-final release.
+
+* [ ] Accessibility audit
+* [ ] Passes HTML5 Validation
+* [ ] Usability in text-only browsers
+* [ ] Refactors for developer readability and future maintenance.
 
 ### Ideas for versions after v1.0
 
