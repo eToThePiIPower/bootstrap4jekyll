@@ -2,6 +2,13 @@
   &.carousel {
     height: 20em;
 
+    .carousel-item-img {
+      display: block;
+      height: 30em;
+      object-fit: cover;
+      width: 100%;
+    }
+
     .carousel-caption {
       bottom: auto;
       top: 0;

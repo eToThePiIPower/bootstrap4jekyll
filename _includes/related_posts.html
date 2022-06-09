@@ -17,7 +17,7 @@
       {% assign class = "carousel-item" %}
       {% if forloop.index == 1 %}{% assign class = "carousel-item active" %}{% endif %}
       <div class="{{ class }}">
-        <img class="d-block w-100" src='/images/headers/{{ post.header.image |
+        <img class="carousel-item-img" src='/images/headers/{{ post.header.image |
                     default: site.categories_meta[post.category].header.image |
                     default: site.header.image }}'>
 
