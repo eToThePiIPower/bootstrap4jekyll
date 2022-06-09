@@ -1,22 +1,13 @@
 {% for post in include.posts %}
-  {% if post.category.first %}
-  <article class="card mb-4 post-excerpt card-category-{{ post.category.first }}">
-  {% elsif post.category %}
-  <article class="card mb-4 post-excerpt card-category-{{ post.category }}">
-  {% else %}
-  <article class="card mb-4 post-excerpt">
-  {% endif %}
-
   {% if post.category %}
-    <a class="card-header card-header-tab"
-       href="/{{ post.category }}">
-      {% if post.category.first %}
-      {{ site.categories_meta[post.category.first].long_title }}
-      {% else %}
-      {{ site.categories_meta[post.category].long_title }}
-      {% endif %}
-    </a>
-    <hr class="card-header-stripe" />
+    <article class="card mb-4 post-excerpt card-category-{{ post.category }}">
+      <span class="sr-only">Filed under:</span>
+      <a class="card-header card-header-tab"
+        href="/{{ post.category }}">
+        {{ site.categories_meta[post.category].long_title }}
+      </a>
+  {% else %}
+    <article class="card mb-4 post-excerpt">
   {% endif %}
 
   {% if post.header %}
@@ -25,9 +16,9 @@
   {% endif %}
 
   <header class="card-body pb-0">
-    <h4 class="card-title">
+    <h2 class="h4 card-title">
       <a class="card-title-link" href="{{ post.url }}">{{ post.title }}</a>
-    </h4>
+    </h2>
   </header>
   <div class="card-body pt-0">
     {{ post.excerpt }}
@@ -41,4 +32,7 @@
     {% include author_popover.html post=post %}
   </footer>
 </article>
+
+<hr class="sr-only" />
+
 {% endfor %}

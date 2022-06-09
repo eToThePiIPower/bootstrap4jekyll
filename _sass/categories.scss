@@ -43,12 +43,9 @@ $index-border: 1px solid $index-border-color;
     color: color-yiq($color);
   }
 
-  .card-header-stripe {
-    border: 2px solid $color;
+  header.card-body {
+    border-top: 4px solid $color;
     border-top-left-radius: calc(.25rem - 1px);
-    margin: 0;
-    margin-bottom: -2px;
-    z-index: 1000;
   }
 }
 
