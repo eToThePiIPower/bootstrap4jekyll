@@ -1,16 +1,19 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <a class="navbar-brand" href="/">{{ site.title-brand }}</a> <button class="navbar-toggler" type="button"
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">{{ site.title-brand }}</a>
+  <button class="navbar-toggler" type="button"
           data-target="#siteMenu" data-toggle="collapse"
-          aria-controls="siteMenu" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="siteMenu" aria-expanded="false"
+          aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div id="siteMenu" class="collapse navbar-collapse">
 
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto" aria-label="Category Menu" role="menubar">
       {% assign cats=site.categories | sort_categories %}
       {% for category in cats %}
       {% assign cat=category | first %}
-      <li id="nav-item-{{ cat }}" class="nav-item">
+      <li id="nav-item-{{ cat }}" class="nav-item" role="menuitem">
         <a class="nav-link" href="/{{ cat  }}">{{ cat | capitalize }}</a>
       </li>
       {% endfor %}
@@ -18,14 +21,14 @@
 
     <div class="dropdown-divider"></div>
 
-    <ul class="navbar-nav ml-auto">
-      <li id="nav-item-about" class="nav-item">
+    <ul class="navbar-nav ml-auto" aria-label="Site Menu" role="menubar">
+      <li id="nav-item-about" class="nav-item" role="menuitem">
         <a class="nav-link" href="/about">About</a>
       </li>
-      <li id="nav-item-resume" class="nav-item">
+      <li id="nav-item-resume" class="nav-item" role="menuitem">
         <a class="nav-link" href="/resume">Résumé</a>
       </li>
-      <li id="nav-item-tags" class="nav-item">
+      <li id="nav-item-tags" class="nav-item" role="menuitem">
         <a class="nav-link" href="/tags">Tags</a>
       </li>
     </ul>
