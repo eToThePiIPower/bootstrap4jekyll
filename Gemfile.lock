@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/etothepiipower/rouge
-  revision: 3b7ce114ade062b8a905d2990a959e77ed41cc9b
+  revision: 9f0c5ddccbbd181712b5b9f3ddcf2bbd8bf1f422
   branch: feature.root-prompt
   specs:
     rouge (3.29.0)
