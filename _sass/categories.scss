@@ -43,9 +43,14 @@ $index-border: 1px solid $index-border-color;
     color: color-yiq($color);
   }
 
+  .card-img-top,
   header.card-body {
     border-top: 4px solid $color;
     border-top-left-radius: calc(.25rem - 1px);
+  }
+
+  .card-img-top+header.card-body {
+    border-top: unset;
   }
 }
 
