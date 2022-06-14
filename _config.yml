@@ -47,12 +47,8 @@ categories_meta:
     long_title: Software Development # Long Title: Optional. Defaults: short title
     description: Thoughts on Software Development # Description: Optional. Default: "Posts in the _ section"
     long_description: These are some of my thoughts on software development. # Long Description: Optional. Default: Description
-    # header: # Header section. Optional. Defaults to the common default.
-    #   image: main.jpg
-    #   imagealt: Closeup photo of black smartphone near black and gray pencil on black spiral notebook
-    weight: -1 # Optional, defaults to 0. Negative comes later in navbar list.
-      # Weight. Optinal. Default: 0. Positive numbers come earlier in the navbar
-      # menu, negative numbers come later.
+    weight: -1 # Optinal. Default: 0. Positive numbers come earlier in the navbar
+               # menu, negative numbers come later.
     header:
       image: code.jpg
       imagealt: An stylized photo of minified JavaScript source code.
@@ -61,7 +57,6 @@ categories_meta:
       credit: Markus Spiske
       credit-link: "https://altphotos.com/authors/markusspiske/"
       license: cc0 # one of cc0, cc-by-2, cc-by-4, cc-ba-sa-4, reserved
-
   life:
     long_title: Life, The Universe, and Everything
     description: So long, and thanks for all the fish
