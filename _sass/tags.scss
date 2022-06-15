@@ -4,6 +4,27 @@
   }
 }
 
+.tag-index {
+  // background: linear-gradient(to top, rgba($white, 0%) -50%, rgba($white, 100%));
+  @include media-breakpoint-down(sm) {
+    background: linear-gradient(to top, rgba($white, 0), $white 10%);
+    top: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -2rem;
+  }
+
+  .tag-group {
+    border: 1px solid $border-color;
+    box-shadow: $box-shadow-sm;
+
+    @include media-breakpoint-down(sm) {
+      overflow: auto;
+      max-height: 25vh;
+    }
+  }
+}
+
 .jumbotron {
   .tags {
     font-size: 1.5em;
