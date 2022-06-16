@@ -10,7 +10,7 @@ header:
   <div class="row">
     {% assign tags = site.tags | sort %}
 
-    <aside class="col-md-3 text-right aside-sticky tag-index">
+    <aside class="col-md-4 col-lg-3 text-right aside-sticky tag-index">
       <h2 class="sr-only">Tag List</h2>
       <ul class="list-group tag-group small">
         {% assign ptags = tags | popular_tags | sort_tags %}
@@ -28,7 +28,7 @@ header:
       </ul>
     </aside>
 
-    <section class="col-md-9">
+    <section class="col-md-8 col-lg-9">
       <div class="h3 text-muted mb-4">Posts by Tags</div>
 
       {% assign ptags = tags | popular_tags | sort %}
