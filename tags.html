@@ -10,9 +10,9 @@ header:
   <div class="row">
     {% assign tags = site.tags | sort %}
 
-    <aside class="col-md-4 col-lg-3 text-right aside-sticky tag-index">
+    <aside class="col-md-4 col-lg-3 text-right aside-index">
       <h2 class="sr-only">Tag List</h2>
-      <ul class="list-group tag-group small">
+      <ul class="list-group aside-index-list small">
         {% assign ptags = tags | popular_tags | sort_tags %}
         {% for tag in ptags %}
           {% assign t = tag | first %}

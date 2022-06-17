@@ -9,17 +9,15 @@ permalink: /archive/
 <div class="container">
   <div class="row">
 
-    <aside class="col-md-3 aside-sticky">
-      <div class="card card-default small">
-        <ul class="list-group list-group-flush">
-          {% for year in (first_year..last_year) reversed %}
-            <a class="list-group-item list-group-item-action" href="#archive-{{ year }}">
-              {{ year }} 
-            </a>
-          {% endfor %}
-        </ul>
-      </div>
-      <hr class="aside-hr"/>
+    <aside class="col-md-3 aside-index">
+      <h2 class="sr-only">Years</h2>
+      <ul class="list-group aside-index-list small ilist-group-flush">
+        {% for year in (first_year..last_year) reversed %}
+          <a class="list-group-item list-group-item-action" href="#archive-{{ year }}">
+            {{ year }}
+          </a>
+        {% endfor %}
+      </ul>
     </aside>
 
     <section class="col-md-9">
