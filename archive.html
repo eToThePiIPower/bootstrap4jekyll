@@ -3,8 +3,7 @@ layout: index
 title: Archive
 permalink: /archive/
 ---
-{% assign first_year = site.posts.last.date | date: "%Y" | plus: 0 %}
-{% assign last_year = site.posts.first.date | date: "%Y" | plus: 0 %}
+{% assign posts = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
 <div class="container">
   <div class="row">
@@ -12,9 +11,9 @@ permalink: /archive/
     <aside class="col-md-3 aside-index">
       <h2 class="sr-only">Years</h2>
       <ul class="list-group aside-index-list small ilist-group-flush">
-        {% for year in (first_year..last_year) reversed %}
-          <a class="list-group-item list-group-item-action" href="#archive-{{ year }}">
-            {{ year }}
+        {% for year in posts reversed %}
+          <a class="list-group-item list-group-item-action" href="#archive-{{ year.name }}">
+            {{ year.name }}
           </a>
         {% endfor %}
       </ul>
@@ -23,13 +22,11 @@ permalink: /archive/
     <section class="col-md-9">
       <div class="h3 text-muted">All Posts</div>
 
-      {% for year in (first_year..last_year) reversed %}
+      {% for year in posts reversed %}
           <div class="card my-4">
-            <h2 class="h4 card-header" id="archive-{{ year }}">{{ year }}</h2>
+            <h2 class="h4 card-header" id="archive-{{ year.name }}">{{ year.name }}</h2>
             <ul class="list-group list-group-flush">
-              {% for post in site.posts %}
-              {% assign post_year = post.date | date: "%Y" | plus: 0 %}
-              {% if post_year == year %}
+              {% for post in year.items %}
               <a class="list-group-item list-group-item-action" href="{{ post.url }}">
                 <h3 class="h6">
                   {{ post.title }}
@@ -41,7 +38,6 @@ permalink: /archive/
                   {{ post.date | date: '%A, %B %-d, %Y'}}
                 </span>
               </a>
-              {% endif %}
               {% endfor %}
             </ul>
           </div>
