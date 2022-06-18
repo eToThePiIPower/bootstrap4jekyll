@@ -11,6 +11,8 @@
 
   .aside-index-list {
     @include media-breakpoint-down(sm) {
+      @include scrollbars-hover;
+
       max-height: 25vh;
       overflow: auto;
     }

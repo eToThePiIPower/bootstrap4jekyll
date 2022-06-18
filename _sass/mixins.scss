@@ -44,6 +44,35 @@ $deep-box-shadow-hover: 0 .5rem 1rem rgba($black, .175);
   }
 }
 
+@mixin scrollbars-hover {
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+
+  &:hover::-webkit-scrollbar { //sass-lint:disable-line force-pseudo-nesting
+    height: .5em;
+    width: .5em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $scrollbar-hover-track-color;
+    border-radius: 5px;
+    box-shadow: $box-shadow-sm;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-hover-thumb-color;
+    border-radius: 5px;
+    box-shadow: $box-shadow-sm;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: $scrollbar-hover-track-color;
+    border-radius: 5px;
+    box-shadow: $box-shadow-sm;
+  }
+}
 
 @mixin inset-figure {
   .code-highlight-caption {

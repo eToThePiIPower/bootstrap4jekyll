@@ -1,36 +1,7 @@
-$pre-scrollbar-track-color: #242d3820;
-$pre-scrollbar-thumb-color: #485b70ff;
-
 .code-highlight-figure>.code-highlight,
 pre {
+  @include scrollbars-hover;
+
   overflow: overlay;
   max-height: 85vh;
-
-  &::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-
-  &:hover::-webkit-scrollbar { //sass-lint:disable-line force-pseudo-nesting
-    height: .5em;
-    width: .5em;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: $pre-scrollbar-track-color;
-    border-radius: 5px;
-    box-shadow: $box-shadow-sm;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $pre-scrollbar-thumb-color;
-    border-radius: 5px;
-    box-shadow: $box-shadow-sm;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background-color: $pre-scrollbar-track-color;
-    border-radius: 5px;
-    box-shadow: $box-shadow-sm;
-  }
 }
